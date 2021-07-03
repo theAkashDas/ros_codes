@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 
        //create a string for the data
 	   std::stringstream ss;
-	   ss << "Hello World " << count;
+	   ss << "Akash counts " << count;
 	   //assign the string data to ROS message data field
        msg.data = ss.str();
 

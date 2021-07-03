@@ -409,6 +409,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 # Convenience name for "all" pass in the directory.
 ros_basics_tutorials/all: ros_basics_tutorials/CMakeFiles/listenerA_node.dir/all
+ros_basics_tutorials/all: ros_basics_tutorials/CMakeFiles/talkerB_node.dir/all
 ros_basics_tutorials/all: ros_basics_tutorials/CMakeFiles/talkerA_node.dir/all
 
 .PHONY : ros_basics_tutorials/all
@@ -418,6 +419,7 @@ ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/listenerA_node.dir/c
 ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/clean
 ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/talkerB_node.dir/clean
 ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 ros_basics_tutorials/clean: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
@@ -569,6 +571,43 @@ ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_basics_tutorials/CMakeFiles/talkerB_node.dir
+
+# All Build rule for target.
+ros_basics_tutorials/CMakeFiles/talkerB_node.dir/all:
+	$(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/depend
+	$(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=80,81 "Built target talkerB_node"
+.PHONY : ros_basics_tutorials/CMakeFiles/talkerB_node.dir/all
+
+# Include target in all.
+all: ros_basics_tutorials/CMakeFiles/talkerB_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bot/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/talkerB_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bot/catkin_ws/build/CMakeFiles 0
+.PHONY : ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule
+
+# Convenience name for target.
+talkerB_node: ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule
+
+.PHONY : talkerB_node
+
+# clean rule for target.
+ros_basics_tutorials/CMakeFiles/talkerB_node.dir/clean:
+	$(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/clean
+.PHONY : ros_basics_tutorials/CMakeFiles/talkerB_node.dir/clean
+
+# clean rule for target.
+clean: ros_basics_tutorials/CMakeFiles/talkerB_node.dir/clean
 
 .PHONY : clean
 
@@ -1297,7 +1336,7 @@ clean: ros_essentials_cpp-master/CMakeFiles/listener_node.dir/clean
 ros_essentials_cpp-master/CMakeFiles/talker_node.dir/all:
 	$(MAKE) -f ros_essentials_cpp-master/CMakeFiles/talker_node.dir/build.make ros_essentials_cpp-master/CMakeFiles/talker_node.dir/depend
 	$(MAKE) -f ros_essentials_cpp-master/CMakeFiles/talker_node.dir/build.make ros_essentials_cpp-master/CMakeFiles/talker_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=80,81 "Built target talker_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=82,83 "Built target talker_node"
 .PHONY : ros_essentials_cpp-master/CMakeFiles/talker_node.dir/all
 
 # Include target in all.
@@ -2364,7 +2403,7 @@ clean: ros_essentials_cpp-master/CMakeFiles/ros_essentials_cpp_generate_messages
 ros_essentials_cpp-master/CMakeFiles/turtlesim_clean_node.dir/all:
 	$(MAKE) -f ros_essentials_cpp-master/CMakeFiles/turtlesim_clean_node.dir/build.make ros_essentials_cpp-master/CMakeFiles/turtlesim_clean_node.dir/depend
 	$(MAKE) -f ros_essentials_cpp-master/CMakeFiles/turtlesim_clean_node.dir/build.make ros_essentials_cpp-master/CMakeFiles/turtlesim_clean_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=82,83 "Built target turtlesim_clean_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=84,85 "Built target turtlesim_clean_node"
 .PHONY : ros_essentials_cpp-master/CMakeFiles/turtlesim_clean_node.dir/all
 
 # Include target in all.
@@ -2654,7 +2693,7 @@ clean: ros_essentials_cpp-master/CMakeFiles/ros_essentials_cpp_genpy.dir/clean
 ros_essentials_cpp-master/CMakeFiles/utility_lib.dir/all:
 	$(MAKE) -f ros_essentials_cpp-master/CMakeFiles/utility_lib.dir/build.make ros_essentials_cpp-master/CMakeFiles/utility_lib.dir/depend
 	$(MAKE) -f ros_essentials_cpp-master/CMakeFiles/utility_lib.dir/build.make ros_essentials_cpp-master/CMakeFiles/utility_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=84,85 "Built target utility_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=86,87 "Built target utility_lib"
 .PHONY : ros_essentials_cpp-master/CMakeFiles/utility_lib.dir/all
 
 # Include target in all.

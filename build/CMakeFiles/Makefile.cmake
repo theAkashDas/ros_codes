@@ -260,6 +260,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake"
   "ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"
   "ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
+  "ros_basics_tutorials/CMakeFiles/talkerB_node.dir/DependInfo.cmake"
   "ros_basics_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake"

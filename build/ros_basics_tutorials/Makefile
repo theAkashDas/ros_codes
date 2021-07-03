@@ -228,6 +228,21 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
+ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule
+.PHONY : ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule
+
+# Convenience name for target.
+talkerB_node: ros_basics_tutorials/CMakeFiles/talkerB_node.dir/rule
+
+.PHONY : talkerB_node
+
+# fast build rule for target.
+talkerB_node/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build
+.PHONY : talkerB_node/fast
+
+# Convenience name for target.
 ros_basics_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_basics_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -476,6 +491,33 @@ src/talkerA.cpp.s:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerA_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerA_node.dir/src/talkerA.cpp.s
 .PHONY : src/talkerA.cpp.s
 
+src/talkertest.o: src/talkertest.cpp.o
+
+.PHONY : src/talkertest.o
+
+# target to build an object file
+src/talkertest.cpp.o:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/src/talkertest.cpp.o
+.PHONY : src/talkertest.cpp.o
+
+src/talkertest.i: src/talkertest.cpp.i
+
+.PHONY : src/talkertest.i
+
+# target to preprocess a source file
+src/talkertest.cpp.i:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/src/talkertest.cpp.i
+.PHONY : src/talkertest.cpp.i
+
+src/talkertest.s: src/talkertest.cpp.s
+
+.PHONY : src/talkertest.s
+
+# target to generate assembly for a file
+src/talkertest.cpp.s:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/src/talkertest.cpp.s
+.PHONY : src/talkertest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -492,6 +534,7 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... talkerB_node"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
@@ -512,6 +555,9 @@ help:
 	@echo "... src/talkerA.o"
 	@echo "... src/talkerA.i"
 	@echo "... src/talkerA.s"
+	@echo "... src/talkertest.o"
+	@echo "... src/talkertest.i"
+	@echo "... src/talkertest.s"
 .PHONY : help
 
 

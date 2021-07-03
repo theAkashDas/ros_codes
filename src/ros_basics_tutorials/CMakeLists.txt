@@ -140,6 +140,11 @@ add_executable(talkerA_node src/talkerA.cpp)
 target_link_libraries (talkerA_node ${catkin_LIBRARIES})
 #add_dependencies(talker gaitech_doc_generate_message_cpp)
 
+#talker
+add_executable(talkerB_node src/talkertest.cpp)
+target_link_libraries (talkerB_node ${catkin_LIBRARIES})
+#add_dependencies(talker gaitech_doc_generate_message_cpp)
+
 #listener
 add_executable(listenerA_node src/listenerA.cpp)
 target_link_libraries (listenerA_node ${catkin_LIBRARIES})
@@ -169,8 +174,7 @@ target_link_libraries (listenerA_node ${catkin_LIBRARIES})
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
+# catkin_install_python(PROGRAMS scripts/talkerC.py
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
@@ -214,3 +218,6 @@ target_link_libraries (listenerA_node ${catkin_LIBRARIES})
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+

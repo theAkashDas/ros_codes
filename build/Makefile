@@ -337,6 +337,19 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named talkerB_node
+
+# Build rule for target.
+talkerB_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 talkerB_node
+.PHONY : talkerB_node
+
+# fast build rule for target.
+talkerB_node/fast:
+	$(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerB_node.dir/build
+.PHONY : talkerB_node/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1129,6 +1142,7 @@ help:
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... talkerB_node"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
