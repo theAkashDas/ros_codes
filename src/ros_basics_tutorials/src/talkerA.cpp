@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 	//create a publisher with a topic "chatter" that will send a String message
 	ros::Publisher chatter_publisher = n.advertise<std_msgs::String>("chatter", 1000);
 	//Rate is a class the is used to define frequency for a loop. Here we send a message each two seconds.
-	ros::Rate loop_rate(2); //4 message per second
+	ros::Rate loop_rate(1); //2 message per second
 
    int count = 0;
    while (ros::ok()) // Keep spinning loop until user presses Ctrl+C
