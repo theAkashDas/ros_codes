@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/install
+
+Name: ros_basics_a
+Description: Description of ros_basics_a
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

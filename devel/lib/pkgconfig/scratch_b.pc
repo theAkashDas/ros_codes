@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/devel
+
+Name: scratch_b
+Description: Description of scratch_b
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
