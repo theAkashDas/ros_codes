@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/rule
+.PHONY : ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/rule
+
+# Convenience name for target.
+listenerSUB_node: ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/rule
+
+.PHONY : listenerSUB_node
+
+# fast build rule for target.
+listenerSUB_node/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build
+.PHONY : listenerSUB_node/fast
+
+# Convenience name for target.
 ros_basics_tutorials/CMakeFiles/listenerA_node.dir/rule:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/listenerA_node.dir/rule
 .PHONY : ros_basics_tutorials/CMakeFiles/listenerA_node.dir/rule
@@ -333,6 +348,21 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/rule
+.PHONY : ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/rule
+
+# Convenience name for target.
+talkerPUB_node: ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/rule
+
+.PHONY : talkerPUB_node
+
+# fast build rule for target.
+talkerPUB_node/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/build
+.PHONY : talkerPUB_node/fast
+
+# Convenience name for target.
 ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -437,6 +467,60 @@ std_msgs_generate_messages_py/fast:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/assignments/botMoveTopic.o: src/assignments/botMoveTopic.cpp.o
+
+.PHONY : src/assignments/botMoveTopic.o
+
+# target to build an object file
+src/assignments/botMoveTopic.cpp.o:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/src/assignments/botMoveTopic.cpp.o
+.PHONY : src/assignments/botMoveTopic.cpp.o
+
+src/assignments/botMoveTopic.i: src/assignments/botMoveTopic.cpp.i
+
+.PHONY : src/assignments/botMoveTopic.i
+
+# target to preprocess a source file
+src/assignments/botMoveTopic.cpp.i:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/src/assignments/botMoveTopic.cpp.i
+.PHONY : src/assignments/botMoveTopic.cpp.i
+
+src/assignments/botMoveTopic.s: src/assignments/botMoveTopic.cpp.s
+
+.PHONY : src/assignments/botMoveTopic.s
+
+# target to generate assembly for a file
+src/assignments/botMoveTopic.cpp.s:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/talkerPUB_node.dir/src/assignments/botMoveTopic.cpp.s
+.PHONY : src/assignments/botMoveTopic.cpp.s
+
+src/assignments/botSubsMoveTopic.o: src/assignments/botSubsMoveTopic.cpp.o
+
+.PHONY : src/assignments/botSubsMoveTopic.o
+
+# target to build an object file
+src/assignments/botSubsMoveTopic.cpp.o:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/src/assignments/botSubsMoveTopic.cpp.o
+.PHONY : src/assignments/botSubsMoveTopic.cpp.o
+
+src/assignments/botSubsMoveTopic.i: src/assignments/botSubsMoveTopic.cpp.i
+
+.PHONY : src/assignments/botSubsMoveTopic.i
+
+# target to preprocess a source file
+src/assignments/botSubsMoveTopic.cpp.i:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/src/assignments/botSubsMoveTopic.cpp.i
+.PHONY : src/assignments/botSubsMoveTopic.cpp.i
+
+src/assignments/botSubsMoveTopic.s: src/assignments/botSubsMoveTopic.cpp.s
+
+.PHONY : src/assignments/botSubsMoveTopic.s
+
+# target to generate assembly for a file
+src/assignments/botSubsMoveTopic.cpp.s:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/src/assignments/botSubsMoveTopic.cpp.s
+.PHONY : src/assignments/botSubsMoveTopic.cpp.s
+
 src/listenerA.o: src/listenerA.cpp.o
 
 .PHONY : src/listenerA.o
@@ -527,6 +611,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
+	@echo "... listenerSUB_node"
 	@echo "... test"
 	@echo "... listenerA_node"
 	@echo "... list_install_components"
@@ -542,6 +627,7 @@ help:
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... talkerPUB_node"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -549,6 +635,12 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... src/assignments/botMoveTopic.o"
+	@echo "... src/assignments/botMoveTopic.i"
+	@echo "... src/assignments/botMoveTopic.s"
+	@echo "... src/assignments/botSubsMoveTopic.o"
+	@echo "... src/assignments/botSubsMoveTopic.i"
+	@echo "... src/assignments/botSubsMoveTopic.s"
 	@echo "... src/listenerA.o"
 	@echo "... src/listenerA.i"
 	@echo "... src/listenerA.s"

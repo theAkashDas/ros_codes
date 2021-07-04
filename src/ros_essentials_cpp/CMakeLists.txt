@@ -111,3 +111,7 @@ target_link_libraries(open_copy_cpp ${OpenCV_LIBRARIES})
 add_executable(image_pub_sub_cpp src/topic03_perception/cpp/image_pub_sub.cpp)
 target_link_libraries(image_pub_sub_cpp ${catkin_LIBRARIES})
 target_link_libraries(image_pub_sub_cpp ${OpenCV_LIBRARIES})
+
+ #catkin_install_python(PROGRAMS scripts/talker.py
+ #  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+ #)

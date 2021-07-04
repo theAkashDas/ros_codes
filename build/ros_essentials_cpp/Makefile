@@ -273,21 +273,6 @@ talker_node/fast:
 .PHONY : talker_node/fast
 
 # Convenience name for target.
-ros_essentials_cpp/CMakeFiles/talker.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_essentials_cpp/CMakeFiles/talker.dir/rule
-.PHONY : ros_essentials_cpp/CMakeFiles/talker.dir/rule
-
-# Convenience name for target.
-talker: ros_essentials_cpp/CMakeFiles/talker.dir/rule
-
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_essentials_cpp/CMakeFiles/talker.dir/build.make ros_essentials_cpp/CMakeFiles/talker.dir/build
-.PHONY : talker/fast
-
-# Convenience name for target.
 ros_essentials_cpp/CMakeFiles/laserscan_lib.dir/rule:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_essentials_cpp/CMakeFiles/laserscan_lib.dir/rule
 .PHONY : ros_essentials_cpp/CMakeFiles/laserscan_lib.dir/rule
@@ -872,33 +857,6 @@ utility_lib/fast:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_essentials_cpp/CMakeFiles/utility_lib.dir/build.make ros_essentials_cpp/CMakeFiles/utility_lib.dir/build
 .PHONY : utility_lib/fast
 
-src/talker_a.o: src/talker_a.cpp.o
-
-.PHONY : src/talker_a.o
-
-# target to build an object file
-src/talker_a.cpp.o:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_essentials_cpp/CMakeFiles/talker.dir/build.make ros_essentials_cpp/CMakeFiles/talker.dir/src/talker_a.cpp.o
-.PHONY : src/talker_a.cpp.o
-
-src/talker_a.i: src/talker_a.cpp.i
-
-.PHONY : src/talker_a.i
-
-# target to preprocess a source file
-src/talker_a.cpp.i:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_essentials_cpp/CMakeFiles/talker.dir/build.make ros_essentials_cpp/CMakeFiles/talker.dir/src/talker_a.cpp.i
-.PHONY : src/talker_a.cpp.i
-
-src/talker_a.s: src/talker_a.cpp.s
-
-.PHONY : src/talker_a.s
-
-# target to generate assembly for a file
-src/talker_a.cpp.s:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_essentials_cpp/CMakeFiles/talker.dir/build.make ros_essentials_cpp/CMakeFiles/talker.dir/src/talker_a.cpp.s
-.PHONY : src/talker_a.cpp.s
-
 src/topic01_basics/service/add_two_ints_client.o: src/topic01_basics/service/add_two_ints_client.cpp.o
 
 .PHONY : src/topic01_basics/service/add_two_ints_client.o
@@ -1211,7 +1169,6 @@ help:
 	@echo "... add_two_ints_server"
 	@echo "... listener_node"
 	@echo "... talker_node"
-	@echo "... talker"
 	@echo "... edit_cache"
 	@echo "... laserscan_lib"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -1256,9 +1213,6 @@ help:
 	@echo "... install/strip"
 	@echo "... ros_essentials_cpp_genpy"
 	@echo "... utility_lib"
-	@echo "... src/talker_a.o"
-	@echo "... src/talker_a.i"
-	@echo "... src/talker_a.s"
 	@echo "... src/topic01_basics/service/add_two_ints_client.o"
 	@echo "... src/topic01_basics/service/add_two_ints_client.i"
 	@echo "... src/topic01_basics/service/add_two_ints_client.s"

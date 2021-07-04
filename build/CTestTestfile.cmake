@@ -6,4 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("ros_basics_tutorials")
-subdirs("ros_essentials_cpp-master")
+subdirs("ros_essentials_cpp")

@@ -145,9 +145,18 @@ add_executable(talkerB_node src/talkertest.cpp)
 target_link_libraries (talkerB_node ${catkin_LIBRARIES})
 #add_dependencies(talker gaitech_doc_generate_message_cpp)
 
+#talker
+add_executable(talkerPUB_node src/assignments/botMoveTopic.cpp)
+target_link_libraries (talkerPUB_node ${catkin_LIBRARIES})
+#add_dependencies(talker gaitech_doc_generate_message_cpp)
+
 #listener
 add_executable(listenerA_node src/listenerA.cpp)
 target_link_libraries (listenerA_node ${catkin_LIBRARIES})
+
+#listener
+add_executable(listenerSUB_node src/assignments/botSubsMoveTopic.cpp)
+target_link_libraries (listenerSUB_node ${catkin_LIBRARIES})
 
 
 ## Rename C++ executable without prefix
