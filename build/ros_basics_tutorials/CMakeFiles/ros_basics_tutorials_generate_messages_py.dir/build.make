@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /home/bot/catkin_ws/build
 include ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py.dir/progress.make
 
 ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/_IoT_Sensor.py
+ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/_AddThreeInts.py
 ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/__init__.py
+ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/__init__.py
 
 
 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/_IoT_Sensor.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
@@ -62,14 +64,28 @@ ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py: /home
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG ros_basics_tutorials/IoT_Sensor"
 	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/bot/catkin_ws/src/ros_basics_tutorials/msg/IoT_Sensor.msg -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg
 
+/home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/_AddThreeInts.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/_AddThreeInts.py: /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV ros_basics_tutorials/AddThreeInts"
+	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv
+
 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/__init__.py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/_IoT_Sensor.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for ros_basics_tutorials"
+/home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/__init__.py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/_AddThreeInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for ros_basics_tutorials"
 	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg --initpy
+
+/home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/__init__.py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/_IoT_Sensor.py
+/home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/__init__.py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/_AddThreeInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for ros_basics_tutorials"
+	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv --initpy
 
 ros_basics_tutorials_generate_messages_py: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py
 ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/_IoT_Sensor.py
+ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/_AddThreeInts.py
 ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/msg/__init__.py
+ros_basics_tutorials_generate_messages_py: /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_tutorials/srv/__init__.py
 ros_basics_tutorials_generate_messages_py: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_py.dir/build.make
 
 .PHONY : ros_basics_tutorials_generate_messages_py

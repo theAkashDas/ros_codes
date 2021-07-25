@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/bot/catkin_ws/build
 include ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_nodejs.dir/progress.make
 
 ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_nodejs: /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/msg/IoT_Sensor.js
+ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_nodejs: /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/srv/AddThreeInts.js
 
 
 /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/msg/IoT_Sensor.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,14 @@ ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_nodejs: /
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from ros_basics_tutorials/IoT_Sensor.msg"
 	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bot/catkin_ws/src/ros_basics_tutorials/msg/IoT_Sensor.msg -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/msg
 
+/home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/srv/AddThreeInts.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/srv/AddThreeInts.js: /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ros_basics_tutorials/AddThreeInts.srv"
+	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/srv
+
 ros_basics_tutorials_generate_messages_nodejs: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_nodejs
 ros_basics_tutorials_generate_messages_nodejs: /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/msg/IoT_Sensor.js
+ros_basics_tutorials_generate_messages_nodejs: /home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/srv/AddThreeInts.js
 ros_basics_tutorials_generate_messages_nodejs: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_nodejs.dir/build.make
 
 .PHONY : ros_basics_tutorials_generate_messages_nodejs

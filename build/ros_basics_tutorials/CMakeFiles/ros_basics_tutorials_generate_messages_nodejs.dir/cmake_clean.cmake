@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_basics_tutorials_generate_messages_nodejs"
   "/home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/msg/IoT_Sensor.js"
+  "/home/bot/catkin_ws/devel/share/gennodejs/ros/ros_basics_tutorials/srv/AddThreeInts.js"
 )
 
 # Per-language clean rules from dependency scanning.

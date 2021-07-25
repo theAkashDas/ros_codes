@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/bot/catkin_ws/build
 include ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus.dir/progress.make
 
 ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus: /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/msg/IoT_Sensor.l
+ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus: /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/srv/AddThreeInts.l
 ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus: /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/manifest.l
 
 
@@ -62,12 +63,18 @@ ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus: /hom
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from ros_basics_tutorials/IoT_Sensor.msg"
 	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bot/catkin_ws/src/ros_basics_tutorials/msg/IoT_Sensor.msg -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/msg
 
+/home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/srv/AddThreeInts.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/srv/AddThreeInts.l: /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from ros_basics_tutorials/AddThreeInts.srv"
+	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/srv
+
 /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for ros_basics_tutorials"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for ros_basics_tutorials"
 	cd /home/bot/catkin_ws/build/ros_basics_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials ros_basics_tutorials std_msgs
 
 ros_basics_tutorials_generate_messages_eus: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus
 ros_basics_tutorials_generate_messages_eus: /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/msg/IoT_Sensor.l
+ros_basics_tutorials_generate_messages_eus: /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/srv/AddThreeInts.l
 ros_basics_tutorials_generate_messages_eus: /home/bot/catkin_ws/devel/share/roseus/ros/ros_basics_tutorials/manifest.l
 ros_basics_tutorials_generate_messages_eus: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_eus.dir/build.make
 

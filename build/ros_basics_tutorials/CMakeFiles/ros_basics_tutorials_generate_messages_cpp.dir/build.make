@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/bot/catkin_ws/build
 include ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_cpp.dir/progress.make
 
 ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_cpp: /home/bot/catkin_ws/devel/include/ros_basics_tutorials/IoT_Sensor.h
+ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_cpp: /home/bot/catkin_ws/devel/include/ros_basics_tutorials/AddThreeInts.h
 
 
 /home/bot/catkin_ws/devel/include/ros_basics_tutorials/IoT_Sensor.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -62,8 +63,16 @@ ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_cpp: /hom
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from ros_basics_tutorials/IoT_Sensor.msg"
 	cd /home/bot/catkin_ws/src/ros_basics_tutorials && /home/bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bot/catkin_ws/src/ros_basics_tutorials/msg/IoT_Sensor.msg -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/include/ros_basics_tutorials -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/bot/catkin_ws/devel/include/ros_basics_tutorials/AddThreeInts.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/bot/catkin_ws/devel/include/ros_basics_tutorials/AddThreeInts.h: /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv
+/home/bot/catkin_ws/devel/include/ros_basics_tutorials/AddThreeInts.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/bot/catkin_ws/devel/include/ros_basics_tutorials/AddThreeInts.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from ros_basics_tutorials/AddThreeInts.srv"
+	cd /home/bot/catkin_ws/src/ros_basics_tutorials && /home/bot/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv -Iros_basics_tutorials:/home/bot/catkin_ws/src/ros_basics_tutorials/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_basics_tutorials -o /home/bot/catkin_ws/devel/include/ros_basics_tutorials -e /opt/ros/melodic/share/gencpp/cmake/..
+
 ros_basics_tutorials_generate_messages_cpp: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_cpp
 ros_basics_tutorials_generate_messages_cpp: /home/bot/catkin_ws/devel/include/ros_basics_tutorials/IoT_Sensor.h
+ros_basics_tutorials_generate_messages_cpp: /home/bot/catkin_ws/devel/include/ros_basics_tutorials/AddThreeInts.h
 ros_basics_tutorials_generate_messages_cpp: ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_generate_messages_cpp.dir/build.make
 
 .PHONY : ros_basics_tutorials_generate_messages_cpp

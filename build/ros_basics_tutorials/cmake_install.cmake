@@ -42,6 +42,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_basics_tutorials/srv" TYPE FILE FILES "/home/bot/catkin_ws/src/ros_basics_tutorials/srv/AddThreeInts.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_basics_tutorials/cmake" TYPE FILE FILES "/home/bot/catkin_ws/build/ros_basics_tutorials/catkin_generated/installspace/ros_basics_tutorials-msg-paths.cmake")
 endif()
 
