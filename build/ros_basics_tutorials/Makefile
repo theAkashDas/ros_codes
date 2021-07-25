@@ -80,6 +80,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -123,17 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -346,6 +346,21 @@ ros_basics_tutorials_gencpp: ros_basics_tutorials/CMakeFiles/ros_basics_tutorial
 ros_basics_tutorials_gencpp/fast:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_gencpp.dir/build.make ros_basics_tutorials/CMakeFiles/ros_basics_tutorials_gencpp.dir/build
 .PHONY : ros_basics_tutorials_gencpp/fast
+
+# Convenience name for target.
+ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 ros_basics_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
@@ -588,6 +603,21 @@ talkerA_node/fast:
 .PHONY : talkerA_node/fast
 
 # Convenience name for target.
+ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/rule
+.PHONY : ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/rule
+
+# Convenience name for target.
+iot_sensor_pub_cpp_node: ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/rule
+
+.PHONY : iot_sensor_pub_cpp_node
+
+# fast build rule for target.
+iot_sensor_pub_cpp_node/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/build.make ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/build
+.PHONY : iot_sensor_pub_cpp_node/fast
+
+# Convenience name for target.
 ros_basics_tutorials/CMakeFiles/listenerA_node.dir/rule:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/listenerA_node.dir/rule
 .PHONY : ros_basics_tutorials/CMakeFiles/listenerA_node.dir/rule
@@ -647,21 +677,6 @@ listenerSUB_node/fast:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build
 .PHONY : listenerSUB_node/fast
 
-# Convenience name for target.
-ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ros_basics_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
 src/assignments/botMoveTopic.o: src/assignments/botMoveTopic.cpp.o
 
 .PHONY : src/assignments/botMoveTopic.o
@@ -715,6 +730,33 @@ src/assignments/botSubsMoveTopic.s: src/assignments/botSubsMoveTopic.cpp.s
 src/assignments/botSubsMoveTopic.cpp.s:
 	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/build.make ros_basics_tutorials/CMakeFiles/listenerSUB_node.dir/src/assignments/botSubsMoveTopic.cpp.s
 .PHONY : src/assignments/botSubsMoveTopic.cpp.s
+
+src/iot_sensor/IoT_SensorPUB.o: src/iot_sensor/IoT_SensorPUB.cpp.o
+
+.PHONY : src/iot_sensor/IoT_SensorPUB.o
+
+# target to build an object file
+src/iot_sensor/IoT_SensorPUB.cpp.o:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/build.make ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/src/iot_sensor/IoT_SensorPUB.cpp.o
+.PHONY : src/iot_sensor/IoT_SensorPUB.cpp.o
+
+src/iot_sensor/IoT_SensorPUB.i: src/iot_sensor/IoT_SensorPUB.cpp.i
+
+.PHONY : src/iot_sensor/IoT_SensorPUB.i
+
+# target to preprocess a source file
+src/iot_sensor/IoT_SensorPUB.cpp.i:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/build.make ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/src/iot_sensor/IoT_SensorPUB.cpp.i
+.PHONY : src/iot_sensor/IoT_SensorPUB.cpp.i
+
+src/iot_sensor/IoT_SensorPUB.s: src/iot_sensor/IoT_SensorPUB.cpp.s
+
+.PHONY : src/iot_sensor/IoT_SensorPUB.s
+
+# target to generate assembly for a file
+src/iot_sensor/IoT_SensorPUB.cpp.s:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/build.make ros_basics_tutorials/CMakeFiles/iot_sensor_pub_cpp_node.dir/src/iot_sensor/IoT_SensorPUB.cpp.s
+.PHONY : src/iot_sensor/IoT_SensorPUB.cpp.s
 
 src/listenerA.o: src/listenerA.cpp.o
 
@@ -817,6 +859,8 @@ help:
 	@echo "... ros_basics_tutorials_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... ros_basics_tutorials_gencpp"
+	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
@@ -835,20 +879,22 @@ help:
 	@echo "... ros_basics_tutorials_geneus"
 	@echo "... ros_basics_tutorials_gennodejs"
 	@echo "... talkerA_node"
+	@echo "... iot_sensor_pub_cpp_node"
 	@echo "... install/local"
 	@echo "... listenerA_node"
 	@echo "... talkerPUB_node"
 	@echo "... test"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... listenerSUB_node"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rebuild_cache"
 	@echo "... src/assignments/botMoveTopic.o"
 	@echo "... src/assignments/botMoveTopic.i"
 	@echo "... src/assignments/botMoveTopic.s"
 	@echo "... src/assignments/botSubsMoveTopic.o"
 	@echo "... src/assignments/botSubsMoveTopic.i"
 	@echo "... src/assignments/botSubsMoveTopic.s"
+	@echo "... src/iot_sensor/IoT_SensorPUB.o"
+	@echo "... src/iot_sensor/IoT_SensorPUB.i"
+	@echo "... src/iot_sensor/IoT_SensorPUB.s"
 	@echo "... src/listenerA.o"
 	@echo "... src/listenerA.i"
 	@echo "... src/listenerA.s"

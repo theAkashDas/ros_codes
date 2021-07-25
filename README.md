@@ -1,4 +1,4 @@
-# ros_codes
+# ROS CODES
 - This repository contains my catkin workspace in one place.
 
 ### 1.0.1 (code)
@@ -27,4 +27,10 @@
 - Created custom services
 - Add three Int server and client
 
+### 1.0.6(code + bugfix)
+- Problem with IoT sensor Publisher cpp was removed.
+- Added IoT Sensor Publisher Cpp code
+- IoT sensor Subscriber Cpp is left, some error with callback func.
+- custom services python working
+- need to add custom service cpp code.
  

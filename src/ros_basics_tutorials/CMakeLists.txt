@@ -165,6 +165,11 @@ target_link_libraries (listenerA_node ${catkin_LIBRARIES})
 add_executable(listenerSUB_node src/assignments/botSubsMoveTopic.cpp)
 target_link_libraries (listenerSUB_node ${catkin_LIBRARIES})
 
+#iot sensor pub
+add_executable(iot_sensor_pub_cpp_node src/iot_sensor/IoT_SensorPUB.cpp)
+target_link_libraries (iot_sensor_pub_cpp_node ${catkin_LIBRARIES})
+#add_dependencies(talker gaitech_doc_generate_message_cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
