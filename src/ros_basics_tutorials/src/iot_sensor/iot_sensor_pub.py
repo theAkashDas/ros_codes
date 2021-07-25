@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 # license removed for brevity
 import rospy
 from ros_basics_tutorials.msg import IoT_Sensor
@@ -20,6 +20,7 @@ while not rospy.is_shutdown():
     iot_sensor.name="iot_parking_01"
     iot_sensor.temperature = 24.33 + (random.random()*2)
     iot_sensor.humidity = 33.41+ (random.random()*2)
+    iot_sensor.altitude = 1000
     rospy.loginfo("I publish:")
     rospy.loginfo(iot_sensor)
     pub.publish(iot_sensor)
