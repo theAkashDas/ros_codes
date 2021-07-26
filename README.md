@@ -32,5 +32,11 @@
 - Added IoT Sensor Publisher Cpp code
 - IoT sensor Subscriber Cpp is left, some error with callback func.
 - custom services python working
-- need to add custom service cpp code.
+- need to add custom service Cpp code.
+
+### 1.0.7(code + bugfix)
+ - Solved the problem with custom message code in Cpp
+ - Added a new package named turtlesim_cleaner_bot
+ - Next thing to do Service in Cpp
+ - Motion in ROS.
  

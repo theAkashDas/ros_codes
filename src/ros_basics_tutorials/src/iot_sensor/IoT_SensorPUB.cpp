@@ -37,7 +37,7 @@ int main(int argc, char **argv)
     //    ROS_INFO("[Talker] I published %s\n", msg.data.c_str());
 
        //Publish the message
-       ROS_INFO("PUBLISHED: %d, %s, %.2f, %.2f, %.2f\n",msg.id,msg.name.c_str(),msg.temperature,msg.humidity,msg.altitude);
+       ROS_INFO("PUBLISHER: %d, %s, %.2f, %.2f, %.2f\n",msg.id,msg.name.c_str(),msg.temperature,msg.humidity,msg.altitude);
        chatter_publisher.publish(msg);
 
        ros::spinOnce(); // Need to call this function often to allow ROS to process incoming messages
