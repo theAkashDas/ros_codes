@@ -38,5 +38,5 @@
  - Solved the problem with custom message code in Cpp
  - Added a new package named turtlesim_cleaner_bot
  - Next thing to do Service in Cpp
- - Motion in ROS.
+ - to do Motion in ROS.
  
