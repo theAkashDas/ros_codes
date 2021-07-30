@@ -39,4 +39,10 @@
  - Added a new package named turtlesim_cleaner_bot
  - Next thing to do Service in Cpp
  - to do Motion in ROS.
+
+ ### 1.0.8(bug)
+ - Motion in ROS not working.
+ - turtle_cleaner_bot package not working.
+ - catkin_make error
+ - ros.h not found error :/
  

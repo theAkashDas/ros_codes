@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/bot/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/ros_basics_tutorials/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/ros_essentials_cpp/cmake_install.cmake")
+  include("/home/bot/catkin_ws/build/turtlesim_cleaner_bot/cmake_install.cmake")
 
 endif()
 

@@ -23,6 +23,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "ros_essentials_cpp/catkin_generated/ros_essentials_cpp-msg-extras.cmake.develspace.in"
   "ros_essentials_cpp/catkin_generated/ros_essentials_cpp-msg-extras.cmake.installspace.in"
   "ros_essentials_cpp/cmake/ros_essentials_cpp-genmsg.cmake"
+  "turtlesim_cleaner_bot/catkin_generated/ordered_paths.cmake"
+  "turtlesim_cleaner_bot/catkin_generated/package.cmake"
   "/home/bot/catkin_ws/devel/share/ros_basics_tutorials/cmake/ros_basics_tutorials-msg-paths.cmake"
   "/home/bot/catkin_ws/devel/share/ros_essentials_cpp/cmake/ros_essentials_cpp-msg-paths.cmake"
   "/home/bot/catkin_ws/src/CMakeLists.txt"
@@ -31,6 +33,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/bot/catkin_ws/src/ros_essentials_cpp/CMakeLists.txt"
   "/home/bot/catkin_ws/src/ros_essentials_cpp/action/Fibonacci.action"
   "/home/bot/catkin_ws/src/ros_essentials_cpp/package.xml"
+  "/home/bot/catkin_ws/src/turtlesim_cleaner_bot/CMakeLists.txt"
+  "/home/bot/catkin_ws/src/turtlesim_cleaner_bot/package.xml"
   "/opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake"
   "/opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgs-msg-extras.cmake"
   "/opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgs-msg-paths.cmake"
@@ -247,6 +251,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ros_basics_tutorials/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ros_essentials_cpp/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "turtlesim_cleaner_bot/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -341,4 +346,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "ros_essentials_cpp/CMakeFiles/ros_essentials_cpp_genlisp.dir/DependInfo.cmake"
   "ros_essentials_cpp/CMakeFiles/ros_essentials_cpp_genpy.dir/DependInfo.cmake"
   "ros_essentials_cpp/CMakeFiles/utility_lib.dir/DependInfo.cmake"
+  "turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/DependInfo.cmake"
+  "turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   )

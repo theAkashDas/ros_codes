@@ -10,7 +10,13 @@ project(turtlesim_cleaner_bot)
 find_package(catkin REQUIRED)
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(catkin REQUIRED COMPONENTS 
+roscpp
+rospy
+std_msgs
+geometry_msgs
+message_generation
+)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -101,7 +107,7 @@ find_package(catkin REQUIRED)
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES turtlesim_cleaner_bot
-#  CATKIN_DEPENDS other_catkin_pkg
+   CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -127,6 +133,10 @@ include_directories(
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
+add_executable(bot_cleaner_node src/botCleaner.cpp)
+target_link_libraries(bot_cleaner_node ${catkin_LIBRARIES})
+#add_dependencies(bot_celaner_node )
+
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/turtlesim_cleaner_bot_node.cpp)

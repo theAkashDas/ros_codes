@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("ros_basics_tutorials")
 subdirs("ros_essentials_cpp")
+subdirs("turtlesim_cleaner_bot")

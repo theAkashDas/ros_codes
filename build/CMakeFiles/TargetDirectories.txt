@@ -130,3 +130,12 @@
 /home/bot/catkin_ws/build/ros_essentials_cpp/CMakeFiles/install/strip.dir
 /home/bot/catkin_ws/build/ros_essentials_cpp/CMakeFiles/ros_essentials_cpp_genpy.dir
 /home/bot/catkin_ws/build/ros_essentials_cpp/CMakeFiles/utility_lib.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/install/strip.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/install.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/edit_cache.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/install/local.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/test.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/list_install_components.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir
+/home/bot/catkin_ws/build/turtlesim_cleaner_bot/CMakeFiles/rebuild_cache.dir
