@@ -68,29 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -103,16 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -123,6 +101,28 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,61 +168,211 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/rule
-.PHONY : turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/rule
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_lisp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_lisp.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-bot_cleaner_node: turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/rule
+turtlesim_cleaner_bot_generate_messages_lisp: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_lisp.dir/rule
 
-.PHONY : bot_cleaner_node
+.PHONY : turtlesim_cleaner_bot_generate_messages_lisp
 
 # fast build rule for target.
-bot_cleaner_node/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/build
-.PHONY : bot_cleaner_node/fast
+turtlesim_cleaner_bot_generate_messages_lisp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_lisp.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_lisp.dir/build
+.PHONY : turtlesim_cleaner_bot_generate_messages_lisp/fast
 
 # Convenience name for target.
-turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/rule
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genlisp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genlisp.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genlisp.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/rule
+turtlesim_cleaner_bot_genlisp: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genlisp.dir/rule
 
-.PHONY : _catkin_empty_exported_target
+.PHONY : turtlesim_cleaner_bot_genlisp
 
 # fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/build.make turtlesim_cleaner_bot/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
+turtlesim_cleaner_bot_genlisp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genlisp.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genlisp.dir/build
+.PHONY : turtlesim_cleaner_bot_genlisp/fast
 
-src/botCleaner.o: src/botCleaner.cpp.o
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gencpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gencpp.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gencpp.dir/rule
 
-.PHONY : src/botCleaner.o
+# Convenience name for target.
+turtlesim_cleaner_bot_gencpp: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gencpp.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_gencpp
+
+# fast build rule for target.
+turtlesim_cleaner_bot_gencpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gencpp.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gencpp.dir/build
+.PHONY : turtlesim_cleaner_bot_gencpp/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_py.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_py.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_py.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_generate_messages_py: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_py.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_generate_messages_py
+
+# fast build rule for target.
+turtlesim_cleaner_bot_generate_messages_py/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_py.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_py.dir/build
+.PHONY : turtlesim_cleaner_bot_generate_messages_py/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_eus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_eus.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_generate_messages_eus: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_eus.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_generate_messages_eus
+
+# fast build rule for target.
+turtlesim_cleaner_bot_generate_messages_eus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_eus.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_eus.dir/build
+.PHONY : turtlesim_cleaner_bot_generate_messages_eus/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_generate_messages: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_generate_messages
+
+# fast build rule for target.
+turtlesim_cleaner_bot_generate_messages/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages.dir/build
+.PHONY : turtlesim_cleaner_bot_generate_messages/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_cpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_cpp.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_generate_messages_cpp: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_cpp.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_generate_messages_cpp
+
+# fast build rule for target.
+turtlesim_cleaner_bot_generate_messages_cpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_cpp.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_cpp.dir/build
+.PHONY : turtlesim_cleaner_bot_generate_messages_cpp/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_nodejs.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_nodejs.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_generate_messages_nodejs: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_nodejs.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_generate_messages_nodejs
+
+# fast build rule for target.
+turtlesim_cleaner_bot_generate_messages_nodejs/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_nodejs.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_generate_messages_nodejs.dir/build
+.PHONY : turtlesim_cleaner_bot_generate_messages_nodejs/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gennodejs.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gennodejs.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gennodejs.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_gennodejs: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gennodejs.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_gennodejs
+
+# fast build rule for target.
+turtlesim_cleaner_bot_gennodejs/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gennodejs.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_gennodejs.dir/build
+.PHONY : turtlesim_cleaner_bot_gennodejs/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_geneus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_geneus.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_geneus.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_geneus: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_geneus.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_geneus
+
+# fast build rule for target.
+turtlesim_cleaner_bot_geneus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_geneus.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_geneus.dir/build
+.PHONY : turtlesim_cleaner_bot_geneus/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/rule
+
+# Convenience name for target.
+bot_clean_node: turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/rule
+
+.PHONY : bot_clean_node
+
+# fast build rule for target.
+bot_clean_node/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/build
+.PHONY : bot_clean_node/fast
+
+# Convenience name for target.
+turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genpy.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genpy.dir/rule
+.PHONY : turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genpy.dir/rule
+
+# Convenience name for target.
+turtlesim_cleaner_bot_genpy: turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genpy.dir/rule
+
+.PHONY : turtlesim_cleaner_bot_genpy
+
+# fast build rule for target.
+turtlesim_cleaner_bot_genpy/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genpy.dir/build.make turtlesim_cleaner_bot/CMakeFiles/turtlesim_cleaner_bot_genpy.dir/build
+.PHONY : turtlesim_cleaner_bot_genpy/fast
+
+src/bot_cleaner.o: src/bot_cleaner.cpp.o
+
+.PHONY : src/bot_cleaner.o
 
 # target to build an object file
-src/botCleaner.cpp.o:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/src/botCleaner.cpp.o
-.PHONY : src/botCleaner.cpp.o
+src/bot_cleaner.cpp.o:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o
+.PHONY : src/bot_cleaner.cpp.o
 
-src/botCleaner.i: src/botCleaner.cpp.i
+src/bot_cleaner.i: src/bot_cleaner.cpp.i
 
-.PHONY : src/botCleaner.i
+.PHONY : src/bot_cleaner.i
 
 # target to preprocess a source file
-src/botCleaner.cpp.i:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/src/botCleaner.cpp.i
-.PHONY : src/botCleaner.cpp.i
+src/bot_cleaner.cpp.i:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.i
+.PHONY : src/bot_cleaner.cpp.i
 
-src/botCleaner.s: src/botCleaner.cpp.s
+src/bot_cleaner.s: src/bot_cleaner.cpp.s
 
-.PHONY : src/botCleaner.s
+.PHONY : src/bot_cleaner.s
 
 # target to generate assembly for a file
-src/botCleaner.cpp.s:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_cleaner_node.dir/src/botCleaner.cpp.s
-.PHONY : src/botCleaner.cpp.s
+src/bot_cleaner.cpp.s:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/build.make turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.s
+.PHONY : src/bot_cleaner.cpp.s
 
 # Help Target
 help:
@@ -231,17 +381,27 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
-	@echo "... bot_cleaner_node"
-	@echo "... edit_cache"
 	@echo "... install/local"
-	@echo "... test"
+	@echo "... install"
+	@echo "... turtlesim_cleaner_bot_generate_messages_lisp"
+	@echo "... turtlesim_cleaner_bot_genlisp"
+	@echo "... turtlesim_cleaner_bot_gencpp"
+	@echo "... turtlesim_cleaner_bot_generate_messages_py"
+	@echo "... turtlesim_cleaner_bot_generate_messages_eus"
 	@echo "... list_install_components"
-	@echo "... _catkin_empty_exported_target"
+	@echo "... turtlesim_cleaner_bot_generate_messages"
+	@echo "... edit_cache"
+	@echo "... turtlesim_cleaner_bot_generate_messages_cpp"
+	@echo "... turtlesim_cleaner_bot_generate_messages_nodejs"
+	@echo "... turtlesim_cleaner_bot_gennodejs"
+	@echo "... turtlesim_cleaner_bot_geneus"
+	@echo "... bot_clean_node"
+	@echo "... turtlesim_cleaner_bot_genpy"
+	@echo "... test"
 	@echo "... rebuild_cache"
-	@echo "... src/botCleaner.o"
-	@echo "... src/botCleaner.i"
-	@echo "... src/botCleaner.s"
+	@echo "... src/bot_cleaner.o"
+	@echo "... src/bot_cleaner.i"
+	@echo "... src/bot_cleaner.s"
 .PHONY : help
 
 

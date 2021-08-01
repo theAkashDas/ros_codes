@@ -45,4 +45,10 @@
  - turtle_cleaner_bot package not working.
  - catkin_make error
  - ros.h not found error :/
+
+ ### 1.0.9(code + bugfix)
+ - Straight line Motion of cleaner bot working.
+ - Needed to make some changes in Cmake
+ - Added code for the user to give input of motion.
+ - working fine.
  

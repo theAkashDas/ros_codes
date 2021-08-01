@@ -7,16 +7,15 @@ project(turtlesim_cleaner_bot)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED)
-
-## System dependencies are found with CMake's conventions
-find_package(catkin REQUIRED COMPONENTS 
-roscpp
-rospy
-std_msgs
-geometry_msgs
-message_generation
+find_package(catkin REQUIRED COMPONENTS
+    roscpp
+    rospy
+    std_msgs
+    geometry_msgs
+    message_generation
 )
+## System dependencies are found with CMake's conventions
+# find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -70,10 +69,10 @@ message_generation
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+ generate_messages(
+   DEPENDENCIES
+   std_msgs  # Or other packages containing msgs
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -105,10 +104,10 @@ message_generation
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES turtlesim_cleaner_bot
-   CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs message_runtime
-#  DEPENDS system_lib
+## INCLUDE_DIRS include
+##  LIBRARIES turtlesim_cleaner_bot
+  CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs message_runtime
+##  DEPENDS system_lib
 )
 
 ###########
@@ -119,7 +118,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
 # include
-# ${catkin_INCLUDE_DIRS}
+ ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -133,9 +132,11 @@ include_directories(
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(bot_cleaner_node src/botCleaner.cpp)
-target_link_libraries(bot_cleaner_node ${catkin_LIBRARIES})
-#add_dependencies(bot_celaner_node )
+
+#robot cleaner
+add_executable(bot_clean_node src/bot_cleaner.cpp)
+target_link_libraries (bot_clean_node ${catkin_LIBRARIES})
+
 
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide

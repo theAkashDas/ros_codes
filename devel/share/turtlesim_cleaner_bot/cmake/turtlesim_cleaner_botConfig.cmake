@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(turtlesim_cleaner_bot_EXPORTED_TARGETS "")
+set(turtlesim_cleaner_bot_EXPORTED_TARGETS "turtlesim_cleaner_bot_generate_messages_cpp;turtlesim_cleaner_bot_generate_messages_eus;turtlesim_cleaner_bot_generate_messages_lisp;turtlesim_cleaner_bot_generate_messages_nodejs;turtlesim_cleaner_bot_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${turtlesim_cleaner_bot_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND turtlesim_cleaner_bot_EXPORTED_TARGETS ${${turtlesim_cleaner_bot_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "turtlesim_cleaner_bot-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${turtlesim_cleaner_bot_DIR}/${extra})
