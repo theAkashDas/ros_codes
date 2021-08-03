@@ -52,3 +52,9 @@
  - Added code for the user to give input of motion.
  - working fine.
  
+ ### 1.0.10(bug)
+ - Code is in the middle, have errors.
+ - adding a subscriber for our motion in ros code.
+ - not finished, there are bugs.
+ 
+ 
