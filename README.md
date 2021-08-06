@@ -70,6 +70,10 @@
  - added move to goal fuction for the turtlesim bot.
  - added proportional control for moving to the desired location.
 
- 
+  ### 1.0.13 (code)
+ ##### Motion in ROS - Spiral Control and Cleaning Application (FINISHED)
+ - added grid cleaning algorithm for the turtle bot.
+ - added spiral cleaning algorithm for the bot.
+ - made necessary changes in main function.
  
  
