@@ -41,26 +41,35 @@
  - to do Motion in ROS.
 
  ### 1.0.8 (bug)
+ ##### Motion in ROS - Moving in Straight line (UNFINISHED) 
  - Motion in ROS not working.
  - turtle_cleaner_bot package not working.
  - catkin_make error
  - ros.h not found error :/
 
  ### 1.0.9 (code + bugfix)
+ ##### Motion in ROS - Moving in Straight line (FINISHED)
  - Straight line Motion of cleaner bot working.
  - Needed to make some changes in Cmake
  - Added code for the user to give input of motion.
  - working fine.
  
  ### 1.0.10 (bug)
+ ##### Motion in ROS - Rotate Left and Right (UNFINISHED)
  - Code is in the middle, have errors.
  - adding a subscriber for our motion in ros code.
  - not finished, there are bugs.
 
  ### 1.0.11 (code + bugfix)
- ##### Motion in ROS - Rotate Left and Right finished
+ ##### Motion in ROS - Rotate Left and Right (FINISHED)
  - set desired orientation is working.
  - left, right, forward, backward, rotate motion is working.
+
+ ### 1.0.12 (code)
+ ##### Motion in ROS - Go to Goal (FINISHED)
+ - added move to goal fuction for the turtlesim bot.
+ - added proportional control for moving to the desired location.
+
  
  
  

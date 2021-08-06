@@ -17,7 +17,9 @@ void move(double speed,double distance,bool isForward);
 void rotate(double angular_speed,double relative_angle,bool clokwise);
 double degrees2radians(double angle_in_degrees);
 void setDesiredOrientation (double desired_angle_radians);
-
+void poseCallback(const turtlesim::Pose::ConstPtr & pose_message);
+void moveGoal(turtlesim::Pose  goal_pose, double distance_tolerance);
+double getDistance(double x1, double y1, double x2, double y2);
 
 //method to move the robot straight
 void move(double speed,double distance,bool isForward)
@@ -83,7 +85,16 @@ void rotate(double angular_speed,double relative_angle,bool clockwise)
     vel_msg.angular.z = 0;
     velocity_publisher.publish(vel_msg);
 }
-void setDesiredOrientation (double desired_angle_radians){
+
+
+double degrees2radians(double angle_in_degrees)
+{
+	return angle_in_degrees *PI /180.0;
+}
+
+
+void setDesiredOrientation (double desired_angle_radians)
+{
 	double relative_angle_radians = desired_angle_radians - turtlesim_pose.theta;
 	bool clockwise = ((relative_angle_radians<0)?true:false);
 	//cout<<desired_angle_radians <<","<<turtlesim_pose.theta<<","<<relative_angle_radians<<","<<clockwise<<endl;
@@ -91,10 +102,54 @@ void setDesiredOrientation (double desired_angle_radians){
 
 }
 
-void poseCallback(const turtlesim::Pose::ConstPtr & pose_message){
+void poseCallback(const turtlesim::Pose::ConstPtr & pose_message)
+{
 	turtlesim_pose.x=pose_message->x;
 	turtlesim_pose.y=pose_message->y;
 	turtlesim_pose.theta=pose_message->theta;
+}
+
+void moveGoal(turtlesim::Pose  goal_pose, double distance_tolerance)
+{
+    geometry_msgs::Twist vel_msg;
+
+    ros::Rate loop_rate(10);
+
+    do
+    {
+        /****** Proportional Controller ******/
+		//linear velocity in the x-axis
+		double Kp=1.0;
+		double Ki=0.02;
+		//double v0 = 2.0;
+		//double alpha = 0.5;
+		double e = getDistance(turtlesim_pose.x, turtlesim_pose.y, goal_pose.x, goal_pose.y);
+		double E = E+e;
+		//Kp = v0 * (exp(-alpha)*error*error)/(error*error);
+		vel_msg.linear.x = (Kp*e);
+		vel_msg.linear.y =0;
+		vel_msg.linear.z =0;
+		//angular velocity in the z-axis
+		vel_msg.angular.x = 0;
+		vel_msg.angular.y = 0;
+		vel_msg.angular.z =4*(atan2(goal_pose.y-turtlesim_pose.y, goal_pose.x-turtlesim_pose.x)-turtlesim_pose.theta);
+
+		velocity_publisher.publish(vel_msg);
+
+		ros::spinOnce();
+		loop_rate.sleep();
+    }
+    while(getDistance(turtlesim_pose.x, turtlesim_pose.y, goal_pose.x, goal_pose.y)>distance_tolerance);
+    cout<<"end move goal"<<endl;
+	vel_msg.linear.x =0;
+	vel_msg.angular.z = 0;
+	velocity_publisher.publish(vel_msg);
+
+}
+
+double getDistance(double x1, double y1, double x2, double y2)
+{
+	return sqrt(pow((x1-x2),2)+pow((y1-y2),2));
 }
 
 int main(int argc,char **argv)
@@ -106,6 +161,8 @@ int main(int argc,char **argv)
 
     velocity_publisher = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel",10);
     pose_subscriber = n.subscribe("/turtle1/pose", 10, poseCallback);
+
+    ros::Rate loop_rate(0.5);
 
     // cout<<"enter speed: ";
 	// cin>>speed;
@@ -123,12 +180,19 @@ int main(int argc,char **argv)
 	// cin>>clockwise;
 	// rotate(degrees2radians(angular_speed), degrees2radians(angle), clockwise);
 
-    setDesiredOrientation(degrees2radians(120));
-    ros::Rate loop_rate(0.5);
-    loop_rate.sleep();
-    setDesiredOrientation(degrees2radians(-60));
-    loop_rate.sleep();
-    setDesiredOrientation(degrees2radians(0));
+    // setDesiredOrientation(degrees2radians(120));
+    // ros::Rate loop_rate(0.5);
+    // loop_rate.sleep();
+    // setDesiredOrientation(degrees2radians(-60));
+    // loop_rate.sleep();
+    // setDesiredOrientation(degrees2radians(0));
+
+    turtlesim::Pose goal_pose;
+	goal_pose.x=1;
+	goal_pose.y=1;
+	goal_pose.theta=0;
+	moveGoal(goal_pose, 0.01);
+	loop_rate.sleep();
 
     ros::spin();
 
@@ -137,6 +201,3 @@ int main(int argc,char **argv)
     return 0;
 }
 
-double degrees2radians(double angle_in_degrees){
-	return angle_in_degrees *PI /180.0;
-}
