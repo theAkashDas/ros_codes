@@ -1,9 +1,11 @@
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
+#include "turtlesim/Pose.h"
 #include "stdio.h"
 
 ros::Publisher velocity_publisher;
 ros::Subscriber pose_subscriber;
+turtlesim::Pose turtlesim_pose;
 
 
 using namespace std;
@@ -89,6 +91,11 @@ void setDesiredOrientation (double desired_angle_radians){
 
 }
 
+void poseCallback(const turtlesim::Pose::ConstPtr & pose_message){
+	turtlesim_pose.x=pose_message->x;
+	turtlesim_pose.y=pose_message->y;
+	turtlesim_pose.theta=pose_message->theta;
+}
 
 int main(int argc,char **argv)
 {
@@ -100,21 +107,31 @@ int main(int argc,char **argv)
     velocity_publisher = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel",10);
     pose_subscriber = n.subscribe("/turtle1/pose", 10, poseCallback);
 
-    cout<<"enter speed: ";
-	cin>>speed;
-	cout<<"enter distance: ";
-	cin>>distance;
-	cout<<"forward?: ";
-	cin>>isForward;
-	move(speed, distance, isForward);
+    // cout<<"enter speed: ";
+	// cin>>speed;
+	// cout<<"enter distance: ";
+	// cin>>distance;
+	// cout<<"forward?: ";
+	// cin>>isForward;
+	// move(speed, distance, isForward);
 
-    cout<<"enter angular velocity (degree/sec): ";
-	cin>>angular_speed;
-	cout<<"enter desired angle (degrees): ";
-	cin>>angle;
-	cout<<"clockwise ?: ";
-	cin>>clockwise;
-	rotate(degrees2radians(angular_speed), degrees2radians(angle), clockwise);
+    // cout<<"enter angular velocity (degree/sec): ";
+	// cin>>angular_speed;
+	// cout<<"enter desired angle (degrees): ";
+	// cin>>angle;
+	// cout<<"clockwise ?: ";
+	// cin>>clockwise;
+	// rotate(degrees2radians(angular_speed), degrees2radians(angle), clockwise);
+
+    setDesiredOrientation(degrees2radians(120));
+    ros::Rate loop_rate(0.5);
+    loop_rate.sleep();
+    setDesiredOrientation(degrees2radians(-60));
+    loop_rate.sleep();
+    setDesiredOrientation(degrees2radians(0));
+
+    ros::spin();
+
 
     //move(2.0,5.0,1);
     return 0;

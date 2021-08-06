@@ -60,6 +60,7 @@ turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/
 turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/ros/melodic/include/turtlesim/Pose.h
 turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 turtlesim_cleaner_bot/CMakeFiles/bot_clean_node.dir/src/bot_cleaner.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

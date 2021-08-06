@@ -11,6 +11,8 @@ ros/ros.h
 /home/bot/catkin_ws/src/turtlesim_cleaner_bot/src/ros/ros.h
 geometry_msgs/Twist.h
 /home/bot/catkin_ws/src/turtlesim_cleaner_bot/src/geometry_msgs/Twist.h
+turtlesim/Pose.h
+/home/bot/catkin_ws/src/turtlesim_cleaner_bot/src/turtlesim/Pose.h
 stdio.h
 /home/bot/catkin_ws/src/turtlesim_cleaner_bot/src/stdio.h
 
@@ -695,6 +697,22 @@ ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
 
 /opt/ros/melodic/include/rosconsole/macros_generated.h
+
+/opt/ros/melodic/include/turtlesim/Pose.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h
