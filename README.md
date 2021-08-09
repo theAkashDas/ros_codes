@@ -77,12 +77,19 @@
  - made necessary changes in main function.
 
  ### 1.0.14 (code + bug)
- #### CV in ROS with openCV - Install openCV
+ #### CV in ROS with openCV - Install openCV (FINISHED)
  - Anaconda 3 installed python3, which was creating problem with python2.7 
  - openCV was not working because of the environment clash between Python2.7 and Python3.8
  - removed anaconda3 from the system
  - rm -rf ~/anaconda3
  - After everything is working fine.
  - openCV is working not giving any module or package error.
+
+ ### 1.0.15 (code)
+ #### CV in ROS with openCV - openCV open and save image files (FINISHED)
+ - Added a folder named perception
+ - Added folder with images
+ - Added code for opening and saving an image file using openCV
+ - image get copied in a folder named copy inside image folder.
  
  
