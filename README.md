@@ -92,4 +92,9 @@
  - Added code for opening and saving an image file using openCV
  - image get copied in a folder named copy inside image folder.
  
- 
+  ### 1.0.15 (code)
+  #### CV in ROS with openCV - openCV pixels and image structure (FINISHED)
+ - Added a folder named imageStruct
+ - Added code for determining image pixels, image length , width, channels
+ - used numpy and openCV
+  - 
