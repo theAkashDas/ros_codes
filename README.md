@@ -104,3 +104,11 @@
   - Added code for red,green,blue scale images
   - Added code for converting to HSV images
   - Added code for converting to grayscale images.
+
+  ### 1.0.16 (code)
+  #### CV in ROS with openCV - openCV video streams input and drawing shapes (FINISHED)  
+  - Added code for video streaming in ros
+  - Video is streamed from both Webcam and also from saved video
+  - did a little video processing on the videos
+  - converted to gray scale videos
+  - added code for drawing different shapes
