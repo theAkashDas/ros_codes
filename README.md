@@ -75,5 +75,14 @@
  - added grid cleaning algorithm for the turtle bot.
  - added spiral cleaning algorithm for the bot.
  - made necessary changes in main function.
+
+ ### 1.0.14 (code + bug)
+ #### CV in ROS with openCV - Install openCV
+ - Anaconda 3 installed python3, which was creating problem with python2.7 
+ - openCV was not working because of the environment clash between Python2.7 and Python3.8
+ - removed anaconda3 from the system
+ - rm -rf ~/anaconda3
+ - After everything is working fine.
+ - openCV is working not giving any module or package error.
  
  
