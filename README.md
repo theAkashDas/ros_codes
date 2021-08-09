@@ -97,4 +97,10 @@
  - Added a folder named imageStruct
  - Added code for determining image pixels, image length , width, channels
  - used numpy and openCV
-  - 
+  
+  ### 1.0.15 (code)
+  #### CV in ROS with openCV - openCV image encoding (FINISHED)
+  - Added a folder named imageEncoding
+  - Added code for red,green,blue scale images
+  - Added code for converting to HSV images
+  - Added code for converting to grayscale images.
