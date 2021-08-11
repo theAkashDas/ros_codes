@@ -1,2 +1,2 @@
-ros_basics_tutorials:ros_essentials_cpp:turtlesim_cleaner_bot
+ros_basics_tutorials:ros_essentials_cpp:turtlesim_cleaner_bot:usb_cam
 -DCATKIN_DEVEL_PREFIX=/home/bot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bot/catkin_ws/install -G Unix Makefiles

@@ -2,22 +2,22 @@
 - This repository contains my catkin workspace in one place.
 
 ### 1.0.1 (code)
-#### ROS Topics - Publisher and Subscriber
+#### ROS Topics - Publisher and Subscriber (FINISHED)
 - Talker and Listener working in ros_basics_tutorials
 
 ### 1.0.2 (code)
-#### ROS Topics - Publisher and Subscriber
+#### ROS Topics - Publisher and Subscriber (UNFINISHED)
 - Having problem with running .py
 - Turtle bot simulator working.
 
 ### 1.0.3 (bug)
-#### ROS TOpics -  Custom messages
+#### ROS TOpics -  Custom messages (UNFINISHED)
 - Custom messages for ros packages is not complete. In IOT sensor .cpp was having some syntax error with the code.
 - And for .py file the error was (ModuleNotFoundError: No module named 'yaml')
 - ModuleNotFoundError: No module named 'rospkg'
 
 ### 1.0.4 (code + bugfix)
-#### ROS TOpics -  Custom messages
+#### ROS TOpics -  Custom messages (FINISHED)
 - Custom messages are added and completed.
 - #!/usr/bin/env python2.7 - needed to add 2.7 in this or else it was clashing with python3.8
 - yaml problem solved.
@@ -26,14 +26,14 @@
 - Next need to look into .cpp
 
 ### 1.0.5 (code)
-#### ROS Services
+#### ROS Services (UNFINISHED)
 - Used turtle bot service 
 - server and client
 - Created custom services
 - Add three Int server and client
 
 ### 1.0.6 (code + bugfix)
-#### ROS Services
+#### ROS Services (FINISHED)
 - Problem with IoT sensor Publisher cpp was removed.
 - Added IoT Sensor Publisher Cpp code
 - IoT sensor Subscriber Cpp is left, some error with callback func.
@@ -41,7 +41,7 @@
 - need to add custom service Cpp code.
 
 ### 1.0.7 (code + bugfix)
-#### ROS TOpics -  Custom messages
+#### ROS TOpics -  Custom messages (FINISHED)
  - Solved the problem with custom message code in Cpp
  - Added a new package named turtlesim_cleaner_bot
  - Next thing to do Service in Cpp
@@ -119,3 +119,9 @@
   - did a little video processing on the videos
   - converted to gray scale videos
   - added code for drawing different shapes
+
+  ### 1.0.17 (code + bug)
+  #### CV in ROS with openCV - CvBridge Bridging (UNFINISHED)
+  - Added the code for cv bridge
+  - having issues with usb cam package cloning and use.
+  - having problem in sourcing setup.bash
