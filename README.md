@@ -125,3 +125,4 @@
   - Added the code for cv bridge
   - having issues with usb cam package cloning and use.
   - having problem in sourcing setup.bash
+  - need to solve the problem og cv Bridge in ROS
