@@ -139,3 +139,10 @@
   #### CV in ROS with openCV - Simple and Adaptive thresholding (FINISHED) 
   - Added code for simple and adaptive thresholding.
   - working fine.
+
+   ### 1.0.20 (code)
+  #### CV in ROS with openCV - Color Filtering (FINISHED)  
+  - Added the code for color filtering.
+  - converted RGB image to HSV image for easy detection.
+  - given the lower and upper bound for color detection.
+  - palyed with the thresholds for detecting the image properly.
