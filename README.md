@@ -125,4 +125,17 @@
   - Added the code for cv bridge
   - having issues with usb cam package cloning and use.
   - having problem in sourcing setup.bash
-  - need to solve the problem og cv Bridge in ROS
+  - need to solve the problem of cv Bridge in ROS
+
+
+  ### 1.0.18 (code + bugfix)
+  #### CV in ROS with openCV - CvBridge Bridging (FINISHED)
+  - Finished the cv Bridge part
+  - USB cam package is also working fine.
+  - image publisher subscriber working.
+  - usb cam - publisher, imagePUBandSUB - subscriber
+
+  ### 1.0.19 (code)
+  #### CV in ROS with openCV - Simple and Adaptive thresholding (FINISHED) 
+  - Added code for simple and adaptive thresholding.
+  - working fine.
