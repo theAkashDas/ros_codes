@@ -146,3 +146,11 @@
   - converted RGB image to HSV image for easy detection.
   - given the lower and upper bound for color detection.
   - palyed with the thresholds for detecting the image properly.
+
+  ### 1.0.21 (code)
+  #### CV in ROS with openCV - Contour drawing (FINISHED)
+  - Added code for detecting contours
+  - convert rgb image to gray scale
+  - convert it to binary by adaptive thresholding.
+  - draw contours on the image.
+  - need to complete CV in ROS with openCV
