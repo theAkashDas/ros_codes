@@ -154,3 +154,9 @@
   - convert it to binary by adaptive thresholding.
   - draw contours on the image.
   - need to complete CV in ROS with openCV
+
+  ### 1.0.22 (code)
+  #### CV in ROS with openCV - Contour processing (FINISHED)
+  - added code to find the area and perimeter of contours.
+  - added code to draw the contours by the above steps.
+  
