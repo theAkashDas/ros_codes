@@ -159,4 +159,10 @@
   #### CV in ROS with openCV - Contour processing (FINISHED)
   - added code to find the area and perimeter of contours.
   - added code to draw the contours by the above steps.
-  
+
+  ### 1.0.23 (code)
+  #### CV in ROS with openCV - read video cpp (FINISHED)
+  - added cpp code for reading video
+  - made changes in the cmake list
+  - added executable for the code.
+

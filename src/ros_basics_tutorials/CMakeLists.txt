@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  cv_bridge
+  image_transport
   message_generation
 )
 
@@ -173,6 +175,15 @@ target_link_libraries (iot_sensor_pub_cpp_node ${catkin_LIBRARIES})
 #listener
 add_executable(iot_sensor_sub_cpp_node src/iot_sensor/IoT_SensorSUB.cpp)
 target_link_libraries (iot_sensor_sub_cpp_node ${catkin_LIBRARIES})
+
+find_package(OpenCV)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(readvideo_cpp src/perception/cpp/readVideo.cpp)
+target_link_libraries(readvideo_cpp ${catkin_LIBRARIES})
+target_link_libraries(readvideo_cpp ${OpenCV_LIBRARIES})
+
+
+
 
 
 ## Rename C++ executable without prefix

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bot/catkin_ws/src/ros_basics_tutorials/src/perception/cpp/readVideo.cpp
+opencv2/opencv.hpp
+/home/bot/catkin_ws/src/ros_basics_tutorials/src/perception/cpp/opencv2/opencv.hpp
+
