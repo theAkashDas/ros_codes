@@ -167,9 +167,15 @@
   - added executable for the code.
     
 ### 1.0.26 (code)
-##### Rosserial with arduino
+##### Rosserial with arduino (UNFINISHED)
   - Installed ros_lib in arduino
   - Installed other dependencies and packages.
   - Used Rosserial in arduino the blink sketch and hello world.
   - Next to configure ultrasonic sensor using ros.
+
+### 1.0.27 (code)
+##### Ultrasonic sensor with ROS (FINISHED)
+  - Added code for using ultrasonic sensor with arduino and ROS.
+  - Code is working fine.
+  - Rosserial arduino is finished.
 
