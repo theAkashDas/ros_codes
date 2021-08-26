@@ -177,5 +177,12 @@
 ##### Ultrasonic sensor with ROS (FINISHED)
   - Added code for using ultrasonic sensor with arduino and ROS.
   - Code is working fine.
+
+### 1.0.28 (updates + bug)
+  - Added package for gazebo, my_simulation and slam gmapping.
+  - Could not fix the issue
+  - Not working.
+  - Started with Perception - Laser Range Finder
   - Rosserial arduino is finished.
 
+### 1.0.28 ()
