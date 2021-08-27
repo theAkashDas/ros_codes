@@ -184,5 +184,5 @@
   - Not working.
   - Started with Perception - Laser Range Finder
   - Rosserial arduino is finished.
+  - Need to look into Laser Range Finder Module.
 
-### 1.0.28 ()
