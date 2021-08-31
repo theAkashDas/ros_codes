@@ -186,3 +186,11 @@
   - Rosserial arduino is finished.
   - Need to look into Laser Range Finder Module.
 
+### 1.0.29 (updates + bug)
+##### ROS Melodic - Installation of turtlebot3
+  - Added turtlebot 3 simulation packages.
+  - Added navigation and slam packages.
+  - made changes in bashrc by gedit .bashrc for turtlebot3
+  - turtle bot 3 gazebo simulation not working.
+  - The issue is saying Model name is not set for turtlebot 3.
+
