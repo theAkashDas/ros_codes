@@ -931,6 +931,12 @@ ros_basics_tutorials_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/ros_basics_tuto
 ros_basics_tutorials_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/ros_basics_tutorials
 
 //Value Computed by CMake
+ros_course_part2_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/ros_course_part2
+
+//Value Computed by CMake
+ros_course_part2_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/ros_course_part2
+
+//Value Computed by CMake
 ros_essentials_cpp_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/ros_essentials_cpp
 
 //Value Computed by CMake
@@ -1562,7 +1568,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=37
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=38
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

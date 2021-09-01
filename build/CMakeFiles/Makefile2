@@ -8608,6 +8608,24 @@ clean: slam_gmapping/gmapping/CMakeFiles/gmapping_hallway_slow_2011-03-04-21-41-
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory ros_course_part2
+
+# Convenience name for "all" pass in the directory.
+ros_course_part2/all:
+
+.PHONY : ros_course_part2/all
+
+# Convenience name for "clean" pass in the directory.
+ros_course_part2/clean:
+
+.PHONY : ros_course_part2/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ros_course_part2/preinstall:
+
+.PHONY : ros_course_part2/preinstall
+
+#=============================================================================
 # Directory level rules for directory rosserial/rosserial_embeddedlinux
 
 # Convenience name for "all" pass in the directory.

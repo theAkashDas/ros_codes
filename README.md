@@ -194,3 +194,10 @@
   - turtle bot 3 gazebo simulation not working.
   - The issue is saying Model name is not set for turtlebot 3.
 
+### 1.0.30 (code + bugfix)
+##### ROS Part II - Turtlebot3 setup
+  - Added the export data of turtlebot 3 model name in .zshrc
+  - git clone ros code for part 2 from git repo
+  - Did basic movement with teleop in gazebo on turtlebot3 
+  
+
