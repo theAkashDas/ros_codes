@@ -195,9 +195,15 @@
   - The issue is saying Model name is not set for turtlebot 3.
 
 ### 1.0.30 (code + bugfix)
-##### ROS Part II - Turtlebot3 setup
+##### ROS Part II - Turtlebot3 setup (FINISHED)
   - Added the export data of turtlebot 3 model name in .zshrc
   - git clone ros code for part 2 from git repo
   - Did basic movement with teleop in gazebo on turtlebot3 
+
+### 1.0.31 (bug) 
+##### ROS Part II - ROS navigation intro (UNFINISHED)
+  - The simulation on rviz was not working correctly
+  - The data shown after rostopic list is not same as the instructor.
+  - Need to check this part
   
 
