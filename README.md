@@ -205,5 +205,12 @@
   - The simulation on rviz was not working correctly
   - The data shown after rostopic list is not same as the instructor.
   - Need to check this part
+
+### 1.0.32 (theory) 
+##### ROS part II - ROS navigation.
+  - studied about the ROS navigation.
+  - Transformation
+  - Rotation Matrix in 2d and 3d frames.
+  - Frame Change configurations.
   
 
