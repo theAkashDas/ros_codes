@@ -212,5 +212,12 @@
   - Transformation
   - Rotation Matrix in 2d and 3d frames.
   - Frame Change configurations.
-  
+
+### 1.0.33 (theory)
+##### ROS part II - ROS navigation.
+  - got knowledge about rotation representation.
+  - Euler angles.
+  - Quaternions
+  - need to study about gimbal lock.
+
 
