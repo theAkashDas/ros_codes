@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/install
+
+Name: ros_nav
+Description: Description of ros_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -6043,6 +6043,24 @@ clean: ros_essentials_cpp/CMakeFiles/open_copy_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory ros_nav
+
+# Convenience name for "all" pass in the directory.
+ros_nav/all:
+
+.PHONY : ros_nav/all
+
+# Convenience name for "clean" pass in the directory.
+ros_nav/clean:
+
+.PHONY : ros_nav/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ros_nav/preinstall:
+
+.PHONY : ros_nav/preinstall
+
+#=============================================================================
 # Directory level rules for directory rosserial/rosserial_server
 
 # Convenience name for "all" pass in the directory.

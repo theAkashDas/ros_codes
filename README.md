@@ -220,4 +220,11 @@
   - Quaternions
   - need to study about gimbal lock.
 
+### 1.0.34 (code)
+##### ROS part II - Conversions in TF package
+  - used tf package library in python script
+  - made a new package to try my codes.
+  - learned how to do rotation transformation from euler to quaternion and vice versa.
+    
+
 

@@ -942,6 +942,12 @@ ros_essentials_cpp_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/ros_essentials_cp
 //Value Computed by CMake
 ros_essentials_cpp_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/ros_essentials_cpp
 
+//Value Computed by CMake
+ros_nav_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/ros_nav
+
+//Value Computed by CMake
+ros_nav_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/ros_nav
+
 //The directory containing a CMake configuration file for rosbag_storage.
 rosbag_storage_DIR:PATH=/opt/ros/melodic/share/rosbag_storage/cmake
 
@@ -1568,7 +1574,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=38
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=39
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
