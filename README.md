@@ -225,6 +225,13 @@
   - used tf package library in python script
   - made a new package to try my codes.
   - learned how to do rotation transformation from euler to quaternion and vice versa.
+
+### 1.0.35 (code)
+##### ROS part II - Reading Yaw from quaternions
+  - Added code for converting euler from quaternion
+  - subscribed to turtlebot 3 geometry messages.
+  - used the quaternion list to get the yaw.
+  - used view frame to generate a pdf file for frames 
     
 
 
