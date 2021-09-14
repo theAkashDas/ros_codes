@@ -268,6 +268,14 @@
   - Trajectory tries to minimise the total cost.
   - cost consists of path distance bias, goal distance bias, occdist scale
 
+### 1.0.41 (theory)
+##### ROS part II - Navigation   
+  - Learnt about the implementation of path dist bias, goal dist bias and occ scale.
+  - configured the parameters dynamically using rqt_reconfigure
+  - path dist bias is the amount by which it will the path trajectory.
+  - goal dist bias is the amount by which it will reach a goal using the shortest path.
+  - occ scale decides the importance of distance from wall or obstacles  - a high value will give more importance 
+
 
 
     
