@@ -237,7 +237,15 @@
 ##### ROS part II - Transformation
   - Added code for frames transformation broadcaster
   - Added code for frames transformation listener
-     
+
+### 1.0.37 (updates)  
+##### ROS Part II - Navigation demo
+  - Used RVIZ and gazebo to perform navigation.
+  - Used 2D Pose estimate to manually estimate initial pose
+  - Used 2D Nav Goal to perform navigation.
+  - Learnt about recovery behaviour during navigation if the robot gets stuck due to obstacle and path.
+  - Learnt about clearing process which clears the previous static obstacles which are not there during navigation.
+
     
 
 
