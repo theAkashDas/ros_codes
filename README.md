@@ -260,6 +260,14 @@
   - learnt about the carrot planner, navfn, global_planner.
   - Dijkstra Algo + A* algo - need to study
 
+### 1.0.40 (theory)
+##### ROS part II - Navigation 
+  - Dynamic window Algorithm for local path planner.
+  - Learnt about the tuning of simulation time in dwa local path planner.
+  - increasing the simulation time or prediction will increase the computation and consequently decrease the battery power soon.
+  - Trajectory tries to minimise the total cost.
+  - cost consists of path distance bias, goal distance bias, occdist scale
+
 
 
     
