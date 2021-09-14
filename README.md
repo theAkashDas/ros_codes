@@ -284,6 +284,13 @@
   - added code for turtlesim broadcaster and listener.
   - added the launch file of turtle sim follower application.
 
+### 1.0.43 (theory)
+##### ROS part II - Navigation
+  - BUG algorithm
+  - BUG0 - head to goal straight, follow the wall if obstacle is there.
+  - BUG1 - head to goal straight, follow the wall if obstacle is there, go to the closest location of goal.
+  - BUG2 - head to goal straight, follow the wall if obstacle is there, creates a shortest line from start to goal, follow this line.  
+
 
     
 
