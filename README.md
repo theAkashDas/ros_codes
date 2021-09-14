@@ -291,6 +291,13 @@
   - BUG1 - head to goal straight, follow the wall if obstacle is there, go to the closest location of goal.
   - BUG2 - head to goal straight, follow the wall if obstacle is there, creates a shortest line from start to goal, follow this line.  
 
+### 1.0.44 (code)
+##### ROS part II - Navigation 
+  - Need to add three turtle in turtle sim and make them follow.
+  - Added code for the third turtle.
+  - made the third turtle flow the 2nd turtle.
+  - updated in the launch file.
+
 
     
 
