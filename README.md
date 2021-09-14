@@ -253,6 +253,15 @@
   - Learnt about the map frame and local frame.
   - Learnt Particle estimater.  
 
+### 1.0.39 (theory)
+##### ROS part II - Navigation
+  - Learnt about local path planner.
+  - Learnt about global path planner.
+  - learnt about the carrot planner, navfn, global_planner.
+  - Dijkstra Algo + A* algo - need to study
+
+
+
     
 
 
