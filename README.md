@@ -276,6 +276,13 @@
   - goal dist bias is the amount by which it will reach a goal using the shortest path.
   - occ scale decides the importance of distance from wall or obstacles  - a high value will give more importance 
 
+### 1.0.42 (theory + code)
+##### ROS part II - Navigation 
+  - Learnt about follower application using two turtlesim
+  - used rosrun tf tf_echo turtle1_frame turtle2_frame to see relative position and orientation between two frames.
+  - used rosrun tf tf_monitor to know about the frames present.
+  - added code for turtlesim broadcaster and listener.
+  - added the launch file of turtle sim follower application.
 
 
     
