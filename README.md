@@ -246,6 +246,13 @@
   - Learnt about recovery behaviour during navigation if the robot gets stuck due to obstacle and path.
   - Learnt about clearing process which clears the previous static obstacles which are not there during navigation.
 
+### 1.0.38 (code)
+##### ROS part II - Navigation
+  - Added code for autonomous navigation of my turtlebot.
+  - Navigation stack working fine.
+  - Learnt about the map frame and local frame.
+  - Learnt Particle estimater.  
+
     
 
 
