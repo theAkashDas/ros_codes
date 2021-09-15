@@ -298,6 +298,12 @@
   - made the third turtle flow the 2nd turtle.
   - updated in the launch file.
 
+### 1.0.45 (code)
+##### ROS part II - Navigation
+  - Added a fourth turtle in tfBroadcaster.
+  - roslaunch ros_nav tfBroadcaster.launch
+  - fourth turtle will follow the third one.  
+
 
     
 

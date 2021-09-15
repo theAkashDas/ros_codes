@@ -11,7 +11,10 @@
     </node>
     <node name="turtle3_tf_broadcaster" pkg="ros_nav" type="turtlesimTF_Broadcaster.py" respawn="false" output="screen" >
       <param name="turtle" type="string" value="turtle3" /> 
-    </node>    
+    </node>   
+    <node name="turtle4_tf_broadcaster" pkg="ros_nav" type="turtlesimTF_Broadcaster.py" respawn="false" output="screen" >
+      <param name="turtle" type="string" value="turtle4" /> 
+    </node>     
 
      <node pkg="ros_nav" type="turtlesimTF_Listener.py" name="listener" />
 
