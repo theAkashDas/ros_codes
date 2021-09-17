@@ -304,6 +304,15 @@
   - roslaunch ros_nav tfBroadcaster.launch
   - fourth turtle will follow the third one.  
 
+### 1.0.46 (theory)
+  - Need to study about BUG algorithm.
+  - Need to study about hector slam technique.
+  - Need to study Dijkstra ALgo and A* Algo.
+  - Need to find technique to install ROS in raspberry pi.
+  - Need to study about kinect sensor 3d Camera.
+  - Need to know about the working of LIDAR.
+  - Need to study how to convert 3D models to URDF
+
 
     
 
