@@ -313,6 +313,12 @@
   - Need to know about the working of LIDAR.
   - Need to study how to convert 3D models to URDF
 
+### 1.0.47 (theory)
+  - Learn a little about Dijkstra's algorithm and A* algo
+  - A* algo gives weights to a point according to starting and the goal location 
+  - Dijkstra only gives weight according to the starting.
+  - Need to try different algo on solving a maze.
+
 
     
 
