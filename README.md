@@ -314,10 +314,14 @@
   - Need to study how to convert 3D models to URDF
 
 ### 1.0.47 (theory)
-  - Learn a little about Dijkstra's algorithm and A* algo
+  - Learned a little about Dijkstra's algorithm and A* algo
   - A* algo gives weights to a point according to starting and the goal location 
   - Dijkstra only gives weight according to the starting.
   - Need to try different algo on solving a maze.
+
+### 1.0.48 (theory)
+  - Learned about Kalman Filter, Monte Carlo.
+  - Need to look into matrices, jacobian, rotational matrices.
 
 
     
