@@ -2248,6 +2248,32 @@ open_copy_cpp/fast:
 .PHONY : open_copy_cpp/fast
 
 #=============================================================================
+# Target rules for targets named ik
+
+# Build rule for target.
+ik: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ik
+.PHONY : ik
+
+# fast build rule for target.
+ik/fast:
+	$(MAKE) -f stewart/CMakeFiles/ik.dir/build.make stewart/CMakeFiles/ik.dir/build
+.PHONY : ik/fast
+
+#=============================================================================
+# Target rules for targets named ps4_controller
+
+# Build rule for target.
+ps4_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ps4_controller
+.PHONY : ps4_controller
+
+# fast build rule for target.
+ps4_controller/fast:
+	$(MAKE) -f stewart/CMakeFiles/ps4_controller.dir/build.make stewart/CMakeFiles/ps4_controller.dir/build
+.PHONY : ps4_controller/fast
+
+#=============================================================================
 # Target rules for targets named rosserial_server_socket_node
 
 # Build rule for target.
@@ -4344,6 +4370,8 @@ help:
 	@echo "... listener_node"
 	@echo "... read_video_cpp"
 	@echo "... open_copy_cpp"
+	@echo "... ik"
+	@echo "... ps4_controller"
 	@echo "... rosserial_server_socket_node"
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... rosserial_server_udp_socket_node"

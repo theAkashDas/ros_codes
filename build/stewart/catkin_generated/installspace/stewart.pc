@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/install
+
+Name: stewart
+Description: Description of stewart
+Version: 0.0.0
+Cflags: -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: 

@@ -326,6 +326,15 @@
 /home/bot/catkin_ws/build/ros_nav/CMakeFiles/install/local.dir
 /home/bot/catkin_ws/build/ros_nav/CMakeFiles/rebuild_cache.dir
 /home/bot/catkin_ws/build/ros_nav/CMakeFiles/install.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/install/strip.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/install.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/ik.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/install/local.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/test.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/list_install_components.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/ps4_controller.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/edit_cache.dir
+/home/bot/catkin_ws/build/stewart/CMakeFiles/rebuild_cache.dir
 /home/bot/catkin_ws/build/rosserial/rosserial_server/CMakeFiles/install.dir
 /home/bot/catkin_ws/build/rosserial/rosserial_server/CMakeFiles/list_install_components.dir
 /home/bot/catkin_ws/build/rosserial/rosserial_server/CMakeFiles/edit_cache.dir

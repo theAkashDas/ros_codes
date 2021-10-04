@@ -322,6 +322,7 @@
 ### 1.0.48 (theory)
   - Learned about Kalman Filter, Monte Carlo.
   - Need to look into matrices, jacobian, rotational matrices.
+  - Algorithms need to be added.
 
 
     

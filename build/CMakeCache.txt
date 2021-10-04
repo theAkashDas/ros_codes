@@ -320,6 +320,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
+
 //Path to a file.
 FreeImage_INCLUDE_DIRS:PATH=/usr/include
 
@@ -749,6 +752,9 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 
+//The directory containing a CMake configuration file for cmake_modules.
+cmake_modules_DIR:PATH=/opt/ros/melodic/share/cmake_modules/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
@@ -1121,6 +1127,12 @@ std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for std_srvs.
 std_srvs_DIR:PATH=/opt/ros/melodic/share/std_srvs/cmake
+
+//Value Computed by CMake
+stewart_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/stewart
+
+//Value Computed by CMake
+stewart_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/stewart
 
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
@@ -1574,7 +1586,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=39
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=40
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
