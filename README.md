@@ -324,6 +324,12 @@
   - Need to look into matrices, jacobian, rotational matrices.
   - Algorithms need to be added.
 
+### 1.0.49 (theory)
+ - Studied basics about quaternion.
+ - Studied about gimbal lock.
+ - Studied how quaternion is required for representing 3d rotation.
+ - Need to go more into the depths of quaternion mathematics.
+
 
     
 
