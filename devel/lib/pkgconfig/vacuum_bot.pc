@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/devel
+
+Name: vacuum_bot
+Description: Description of vacuum_bot
+Version: 0.0.0
+Cflags: -I/home/bot/catkin_ws/src/vacuum_bot/include
+Libs: -L${prefix}/lib -lmain -lGoals -lCleaner
+Requires: roscpp rospy actionlib actionlib_msgs geometry_msgs move_base_msgs std_msgs tf

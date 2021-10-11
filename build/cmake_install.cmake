@@ -166,6 +166,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/bot/catkin_ws/build/turtlebot3/turtlebot3_teleop/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/turtlesim_cleaner_bot/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/usb_cam/cmake_install.cmake")
+  include("/home/bot/catkin_ws/build/vacuum_bot/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/turtlebot3/turtlebot3_description/cmake_install.cmake")
 
 endif()

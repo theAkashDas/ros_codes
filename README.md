@@ -330,6 +330,11 @@
  - Studied how quaternion is required for representing 3d rotation.
  - Need to go more into the depths of quaternion mathematics.
 
+ ### 1.0.50 (code)
+ - Was trying to work with MQTT 
+ - having some problem for python 2 environment.
+ - Added repo for room cleaning bot.
+
 
     
 
