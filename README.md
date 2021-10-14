@@ -335,6 +335,11 @@
  - having some problem for python 2 environment.
  - Added repo for room cleaning bot.
 
+ ### 1.0.51 (code)
+ - Error in mqtt subscriber function.
+ - Need to start the ros course all over again.
+ 
+
 
     
 

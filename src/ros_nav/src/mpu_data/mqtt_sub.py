@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+
 import os
 import sys
 import time
@@ -6,36 +7,37 @@ import time
 import paho.mqtt.client as mqtt
 import json
 
-def on_connect(client, userdata, flags, rc):
-    print("Connected with result code "+str(rc))
- 
-    # Subscribing in on_connect() - if we lose the connection and
-    # reconnect then subscriptions will be renewed.
-    client.subscribe("CoreElectronics/test")
-    client.subscribe("CoreElectronics/topic")
- 
-# The callback for when a PUBLISH message is received from the server.
-def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload))
 
-    if msg.payload == "Hello":
-        print("Received message #1, do something")
-        # Do something
-
-
-    if msg.payload == "World!":
-        print("Received message #2, do something else")
-        # Do something else
- 
-# Create an MQTT client and attach our routines to it.
 client = mqtt.Client()
-client.on_connect = on_connect
-client.on_message = on_message
- 
-client.connect("test.mosquitto.org", 1883, 60)
- 
-# Process network traffic and dispatch callbacks. This will also handle
-# reconnecting. Check the documentation at
-# https://github.com/eclipse/paho.mqtt.python
-# for information on how to use other loop*() functions
-client.loop_forever()
+client.connect('altor.xyz', 1883, 60)
+
+packet_id = 0
+timestamp = 0
+
+sensor_data = {'timestamp': timestamp,'id':packet_id ,'ax': 0.0, 'ay': 0.0, 'az': 0.0, 'gx': 0.0, 'gy': 0.0, 'gz': 0.0, 'mx': 0.0, 'my':0.0, 'mz':0.0, 'roll':0.0, 'pitch':0.0, 'yaw':0.0}
+
+client.loop_start()
+
+currTime = time.time()
+
+try:
+	while True:
+		packet_id = packet_id + 1
+		
+		for i in range(10):
+                    newTime = time.time()
+        	        dt = newTime - currTime
+         	        currTime = newTime
+
+		client.subscribe('/unlabelled/data/')
+        print(sensor_data[id])
+		
+		time.sleep(0.005)
+except KeyboardInterrupt:
+	pass
+
+client.loop_stop()
+client.disconnect
+
+
+
