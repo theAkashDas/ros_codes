@@ -338,6 +338,7 @@
  ### 1.0.51 (code)
  - Error in mqtt subscriber function.
  - Need to start the ros course all over again.
+ - Started studying about the publisher subscriber and documenting it down here.
  
 
 
