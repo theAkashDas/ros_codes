@@ -6063,6 +6063,24 @@ ros_nav/preinstall:
 .PHONY : ros_nav/preinstall
 
 #=============================================================================
+# Directory level rules for directory bicycle_gazebo
+
+# Convenience name for "all" pass in the directory.
+bicycle_gazebo/all:
+
+.PHONY : bicycle_gazebo/all
+
+# Convenience name for "clean" pass in the directory.
+bicycle_gazebo/clean:
+
+.PHONY : bicycle_gazebo/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bicycle_gazebo/preinstall:
+
+.PHONY : bicycle_gazebo/preinstall
+
+#=============================================================================
 # Directory level rules for directory stewart
 
 # Convenience name for "all" pass in the directory.

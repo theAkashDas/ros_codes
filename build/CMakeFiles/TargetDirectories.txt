@@ -326,6 +326,13 @@
 /home/bot/catkin_ws/build/ros_nav/CMakeFiles/install/local.dir
 /home/bot/catkin_ws/build/ros_nav/CMakeFiles/rebuild_cache.dir
 /home/bot/catkin_ws/build/ros_nav/CMakeFiles/install.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/install/strip.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/edit_cache.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/list_install_components.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/test.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/install/local.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/rebuild_cache.dir
+/home/bot/catkin_ws/build/bicycle_gazebo/CMakeFiles/install.dir
 /home/bot/catkin_ws/build/stewart/CMakeFiles/install/strip.dir
 /home/bot/catkin_ws/build/stewart/CMakeFiles/install.dir
 /home/bot/catkin_ws/build/stewart/CMakeFiles/ik.dir

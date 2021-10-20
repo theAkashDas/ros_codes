@@ -1,6 +1,18 @@
 # ROS CODES
 - This repository contains my catkin workspace in one place.
 
+
+
+
+### Usage :
+##### Autonomous Navigation from starting to goal
+ - roslaunch turtlebot3_gazebo turtlebot3_house.launch
+ - roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/bot/tb3_house_map.yaml
+ - Go to the directory where navGoal.py is present. Run the script by ./navGoal.py
+
+
+
+
 ### 1.0.1 (code)
 ##### ROS Topics - Publisher and Subscriber (FINISHED)
 - Talker and Listener working in ros_basics_tutorials
@@ -339,6 +351,12 @@
  - Error in mqtt subscriber function.
  - Need to start the ros course all over again.
  - Started studying about the publisher subscriber and documenting it down here.
+
+ ### 1.0.52 (repo)
+ - Cloned the gazebo bicycle repo to my catkin_ws
+ - Ran the launch file.
+ - Not working.
+ - Started making Usage commands in README.md
  
 
 

@@ -1110,6 +1110,12 @@ scratch_b_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/scratch_b
 //Value Computed by CMake
 scratch_b_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/scratch_b
 
+//Value Computed by CMake
+self_balancing_bicycle_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/bicycle_gazebo
+
+//Value Computed by CMake
+self_balancing_bicycle_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/bicycle_gazebo
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
@@ -1595,7 +1601,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=41
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=42
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
