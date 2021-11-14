@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/devel
+
+Name: task_1
+Description: Description of task_1
+Version: 0.0.0
+Cflags: -I/home/bot/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

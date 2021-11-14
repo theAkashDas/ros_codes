@@ -342,21 +342,28 @@
  - Studied how quaternion is required for representing 3d rotation.
  - Need to go more into the depths of quaternion mathematics.
 
- ### 1.0.50 (code)
+### 1.0.50 (code)
  - Was trying to work with MQTT 
  - having some problem for python 2 environment.
  - Added repo for room cleaning bot.
 
- ### 1.0.51 (code)
+### 1.0.51 (code)
  - Error in mqtt subscriber function.
  - Need to start the ros course all over again.
  - Started studying about the publisher subscriber and documenting it down here.
 
- ### 1.0.52 (repo)
+### 1.0.52 (repo)
  - Cloned the gazebo bicycle repo to my catkin_ws
  - Ran the launch file.
  - Not working.
  - Started making Usage commands in README.md
+
+### 1.0.53 (repo)
+ - Cloned the bicyle_gazebo repo again in my catkin_ws
+ - Model is showing in gazebo
+ - After cloning need to make catkin_make
+ - Then ```roslaunch self_balancing_bicycle main.launch``` 
+ - Added another bycle repo bicycle_model_URDF.. not working.
  
 
 

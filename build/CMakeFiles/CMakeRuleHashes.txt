@@ -17,6 +17,7 @@ cbda15df9cd57bdf33e4b17a06b32ae5 /home/bot/catkin_ws/devel/include/rosserial_mbe
 bad83f465c29429a37c86d3ae87484e8 /home/bot/catkin_ws/devel/include/rosserial_msgs/Log.h
 c51908cba921b2f206e271fdff7f561f /home/bot/catkin_ws/devel/include/rosserial_msgs/RequestParam.h
 b42eb0a1119349854bb1d55f0fd595ed /home/bot/catkin_ws/devel/include/rosserial_msgs/TopicInfo.h
+2d3934c79e71e62ad8213cb5e7ca2108 /home/bot/catkin_ws/devel/include/task_1/Marker.h
 41c93018d8d99ccf5218e741310aa4e8 /home/bot/catkin_ws/devel/include/turtlebot3_example/Turtlebot3Action.h
 536850a67d8c7f9796405f591425fe1d /home/bot/catkin_ws/devel/include/turtlebot3_example/Turtlebot3ActionFeedback.h
 dc72514a81a276446bd17282c27eb114 /home/bot/catkin_ws/devel/include/turtlebot3_example/Turtlebot3ActionGoal.h
@@ -55,6 +56,8 @@ ad182dadbce214c4f02b7741722d1e8c /home/bot/catkin_ws/devel/lib/python2.7/dist-pa
 3e32c5417e4396f4c45abab100f512e6 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/rosserial_msgs/msg/__init__.py
 041a5d1e75b2c6e4d86984a751a8b83b /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/rosserial_msgs/srv/_RequestParam.py
 fe04f70b14b8e74d1c5071a807e57788 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/rosserial_msgs/srv/__init__.py
+3548162cc96975a6e3f8e914ae54dda4 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/task_1/msg/_Marker.py
+94267fb2dacedc16980b3aa0cac19e43 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/task_1/msg/__init__.py
 d015251a220d80768caec5a11ff47776 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py
 ec3213697a27fb56b55905f351698730 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py
 c3c59c767227d6bd2d932ff87bb06364 /home/bot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py
@@ -85,6 +88,7 @@ a7935fc0fa6cb9e778e9cb675aa8b2d9 /home/bot/catkin_ws/devel/share/common-lisp/ros
 79b6840953f900253cfa9a5876b7cfa7 /home/bot/catkin_ws/devel/share/common-lisp/ros/rosserial_msgs/msg/Log.lisp
 76da79a2792a82ee1e1ee31bda4152f2 /home/bot/catkin_ws/devel/share/common-lisp/ros/rosserial_msgs/msg/TopicInfo.lisp
 b149e9b3c7a759e7c4eefc270de324db /home/bot/catkin_ws/devel/share/common-lisp/ros/rosserial_msgs/srv/RequestParam.lisp
+86afd20e7988707a72923615bc6af9f6 /home/bot/catkin_ws/devel/share/common-lisp/ros/task_1/msg/Marker.lisp
 d6d7b2eb5eff394fc1a2eab7ade868f1 /home/bot/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Action.lisp
 8fdea9090364cf6e364b9a676157fd1f /home/bot/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.lisp
 b1ba499050c2b8cc813acc9931d5a67b /home/bot/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.lisp
@@ -113,6 +117,7 @@ d26e31ac9345029f1ca70ebd0fc83255 /home/bot/catkin_ws/devel/share/gennodejs/ros/r
 a46d891f59f5503d5cb3add2b3887637 /home/bot/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/Log.js
 53b84ff19314b2f6f8b9ea5139729c50 /home/bot/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/TopicInfo.js
 5a822a1dbfeabb8ea5f9ac7f5e400353 /home/bot/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestParam.js
+7e0dbc948d2635d600f8d53e1bedffd9 /home/bot/catkin_ws/devel/share/gennodejs/ros/task_1/msg/Marker.js
 a7af69402c401676022201633f4b27e6 /home/bot/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Action.js
 2cfa63d5f6318b24186cddfaaa040487 /home/bot/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.js
 4c0e3b90504eadf44c926a1bce417b25 /home/bot/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.js
@@ -146,6 +151,8 @@ cc83d0ea4a437e8c6aced5c3b8c0e9be /home/bot/catkin_ws/devel/share/roseus/ros/ross
 b50ba70887432b62e5fd676bc8aee412 /home/bot/catkin_ws/devel/share/roseus/ros/rosserial_msgs/msg/Log.l
 9c3661365d732b7240579fec950aca21 /home/bot/catkin_ws/devel/share/roseus/ros/rosserial_msgs/msg/TopicInfo.l
 e6f4c25dd180914b7377a1c4f80e5006 /home/bot/catkin_ws/devel/share/roseus/ros/rosserial_msgs/srv/RequestParam.l
+c4fd00b0e58f8a226f45dff89cdeef00 /home/bot/catkin_ws/devel/share/roseus/ros/task_1/manifest.l
+2bca260a9d08873c997ee3bff4b748bf /home/bot/catkin_ws/devel/share/roseus/ros/task_1/msg/Marker.l
 f8052a0420aaae7860c9b929e8a7792c /home/bot/catkin_ws/devel/share/roseus/ros/turtlebot3_example/manifest.l
 9b4c1c658f4d55aa2ed82b2b18b11f2b /home/bot/catkin_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Action.l
 8afcf352151f4b892ae8a6e3c5beb4c6 /home/bot/catkin_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.l
@@ -238,6 +245,12 @@ b4ffa5ca61e5b6b495bccbde334c16ad slam_gmapping/gmapping/CMakeFiles/run_tests_gma
 53bb54bdd507e2eafe8a038cf2862082 slam_gmapping/gmapping/CMakeFiles/run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch
 1168b2d02f3d2b75340b9121e70e8555 slam_gmapping/gmapping/CMakeFiles/run_tests_gmapping_rostest_test_basic_localization_symmetry.launch
 2f1b77d4e09fcda23b8d24ed1a0bf6a9 slam_gmapping/gmapping/CMakeFiles/run_tests_gmapping_rostest_test_basic_localization_upside_down.launch
+0422c72650721090e4387ada2a728a2f strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker
+af72a1cf7dd0003225a1f190cb43c36c strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp
+af72a1cf7dd0003225a1f190cb43c36c strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus
+af72a1cf7dd0003225a1f190cb43c36c strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_lisp
+af72a1cf7dd0003225a1f190cb43c36c strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs
+af72a1cf7dd0003225a1f190cb43c36c strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py
 ca448eb4d62f3913ecf218cce5abb8d1 turtlebot3/turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action
 5471ccabb213046c5532fd5c230ba394 turtlebot3/turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionFeedback
 b8fcf966b12e87a48d4338c6ce1be6d3 turtlebot3/turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionGoal

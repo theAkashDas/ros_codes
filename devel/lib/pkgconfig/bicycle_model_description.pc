@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/devel
+
+Name: bicycle_model_description
+Description: Description of bicycle_model_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
