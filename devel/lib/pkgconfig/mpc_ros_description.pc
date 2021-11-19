@@ -1,0 +1,8 @@
+prefix=/home/bot/catkin_ws/devel
+
+Name: mpc_ros_description
+Description: Description of mpc_ros_description
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

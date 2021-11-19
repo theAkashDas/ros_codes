@@ -907,6 +907,12 @@ message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
 
 //Value Computed by CMake
+mpc_ros_description_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description
+
+//Value Computed by CMake
+mpc_ros_description_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/mpc_ros_description/mpc_ros_description
+
+//Value Computed by CMake
 my_simulations_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/my_simulations
 
 //Value Computed by CMake
@@ -1619,7 +1625,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=45
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=46
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

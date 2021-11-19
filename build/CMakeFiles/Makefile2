@@ -12937,6 +12937,24 @@ clean: vacuum_bot/CMakeFiles/_run_tests_vacuum_bot_rostest_test_vacuum_bot_test.
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory mpc_ros_description/mpc_ros_description
+
+# Convenience name for "all" pass in the directory.
+mpc_ros_description/mpc_ros_description/all:
+
+.PHONY : mpc_ros_description/mpc_ros_description/all
+
+# Convenience name for "clean" pass in the directory.
+mpc_ros_description/mpc_ros_description/clean:
+
+.PHONY : mpc_ros_description/mpc_ros_description/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mpc_ros_description/mpc_ros_description/preinstall:
+
+.PHONY : mpc_ros_description/mpc_ros_description/preinstall
+
+#=============================================================================
 # Directory level rules for directory turtlebot3/turtlebot3_description
 
 # Convenience name for "all" pass in the directory.

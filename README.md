@@ -364,6 +364,10 @@
  - After cloning need to make catkin_make
  - Then ```roslaunch self_balancing_bicycle main.launch``` 
  - Added another bycle repo bicycle_model_URDF.. not working.
+
+ ### 1.0.54 (code)
+ - Currently working on making the bicycle move.
+ - Added a world folder to add a wall in gazebo simulation
  
 
 

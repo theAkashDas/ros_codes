@@ -17,6 +17,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "mpc_ros_description/mpc_ros_description/catkin_generated/package.cmake"
   "my_simulations/catkin_generated/package.cmake"
   "ros_basics_tutorials/catkin_generated/ordered_paths.cmake"
   "ros_basics_tutorials/catkin_generated/package.cmake"
@@ -138,6 +139,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/bot/catkin_ws/src/bicycle_gazebo/package.xml"
   "/home/bot/catkin_ws/src/bicycle_model_URDF/bicycle_model_description/CMakeLists.txt"
   "/home/bot/catkin_ws/src/bicycle_model_URDF/bicycle_model_description/package.xml"
+  "/home/bot/catkin_ws/src/mpc_ros_description/mpc_ros_description/CMakeLists.txt"
+  "/home/bot/catkin_ws/src/mpc_ros_description/mpc_ros_description/package.xml"
   "/home/bot/catkin_ws/src/my_simulations/CMakeLists.txt"
   "/home/bot/catkin_ws/src/my_simulations/package.xml"
   "/home/bot/catkin_ws/src/ros_basics_tutorials/CMakeLists.txt"
@@ -671,6 +674,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "bicycle_model_URDF/bicycle_model_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   "usb_cam/CMakeFiles/CMakeDirectoryInformation.cmake"
   "vacuum_bot/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "mpc_ros_description/mpc_ros_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   "turtlebot3/turtlebot3_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -171,6 +171,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/bot/catkin_ws/build/bicycle_model_URDF/bicycle_model_description/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/usb_cam/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/vacuum_bot/cmake_install.cmake")
+  include("/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/cmake_install.cmake")
   include("/home/bot/catkin_ws/build/turtlebot3/turtlebot3_description/cmake_install.cmake")
 
 endif()

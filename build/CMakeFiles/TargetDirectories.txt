@@ -641,6 +641,13 @@
 /home/bot/catkin_ws/build/vacuum_bot/CMakeFiles/install.dir
 /home/bot/catkin_ws/build/vacuum_bot/CMakeFiles/_run_tests_vacuum_bot_rostest_test_vacuum_bot_test.launch.dir
 /home/bot/catkin_ws/build/vacuum_bot/CMakeFiles/test.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/install/strip.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/edit_cache.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/list_install_components.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/test.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/install/local.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/rebuild_cache.dir
+/home/bot/catkin_ws/build/mpc_ros_description/mpc_ros_description/CMakeFiles/install.dir
 /home/bot/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/install/strip.dir
 /home/bot/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/install/local.dir
 /home/bot/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/test.dir
