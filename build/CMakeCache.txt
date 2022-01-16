@@ -314,6 +314,15 @@ DL_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libdl.so
 //Path to a program.
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
+//Dependencies for the target
+DepthImageToLaserScanNodelet_LIB_DEPENDS:STATIC=general;DepthImageToLaserScanROS;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0;general;/opt/ros/melodic/lib/libimage_transport.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Dependencies for the target
+DepthImageToLaserScanROS_LIB_DEPENDS:STATIC=general;DepthImageToLaserScan;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0;general;/opt/ros/melodic/lib/libimage_transport.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Dependencies for the target
+DepthImageToLaserScan_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0;general;/opt/ros/melodic/lib/libimage_transport.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
@@ -761,11 +770,20 @@ class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 //The directory containing a CMake configuration file for cmake_modules.
 cmake_modules_DIR:PATH=/opt/ros/melodic/share/cmake_modules/cmake
 
+//The directory containing a CMake configuration file for costmap_2d.
+costmap_2d_DIR:PATH=/opt/ros/melodic/share/costmap_2d/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/melodic/share/cv_bridge/cmake
+
+//Value Computed by CMake
+depthimage_to_laserscan_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/depthimage_to_laserscan
+
+//Value Computed by CMake
+depthimage_to_laserscan_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/depthimage_to_laserscan
 
 //The directory containing a CMake configuration file for diagnostic_msgs.
 diagnostic_msgs_DIR:PATH=/opt/ros/melodic/share/diagnostic_msgs/cmake
@@ -836,6 +854,9 @@ googletest-distribution_SOURCE_DIR:STATIC=/usr/src/googletest
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/gtest/googlemock/gtest
 
+//The directory containing a CMake configuration file for gtest.
+gtest_DIR:PATH=gtest_DIR-NOTFOUND
+
 //Dependencies for the target
 gtest_LIB_DEPENDS:STATIC=general;-lpthread;
 
@@ -861,6 +882,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//Value Computed by CMake
+heatmap_BINARY_DIR:STATIC=/home/bot/catkin_ws/build/heatmap
+
+//Value Computed by CMake
+heatmap_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/heatmap
+
 //The directory containing a CMake configuration file for ignition-cmake0.
 ignition-cmake0_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0
 
@@ -879,6 +906,9 @@ ignition-msgs1_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-msgs1
 //The directory containing a CMake configuration file for ignition-transport4.
 ignition-transport4_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-transport4
 
+//The directory containing a CMake configuration file for image_geometry.
+image_geometry_DIR:PATH=/opt/ros/melodic/share/image_geometry/cmake
+
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
@@ -888,11 +918,17 @@ interactive_markers_DIR:PATH=/opt/ros/melodic/share/interactive_markers/cmake
 //The directory containing a CMake configuration file for jsoncpp.
 jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp
 
+//The directory containing a CMake configuration file for laser_geometry.
+laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
+
 //Dependencies for the target
 laserscan_lib_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libcv_bridge.so;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0;general;/opt/ros/melodic/lib/libimage_transport.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;utility_lib;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for map_msgs.
+map_msgs_DIR:PATH=/opt/ros/melodic/share/map_msgs/cmake
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -1293,6 +1329,9 @@ vacuum_bot_SOURCE_DIR:STATIC=/home/bot/catkin_ws/src/vacuum_bot
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
 
+//The directory containing a CMake configuration file for voxel_grid.
+voxel_grid_DIR:PATH=/opt/ros/melodic/share/voxel_grid/cmake
+
 //The directory containing a CMake configuration file for xacro.
 xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
 
@@ -1625,7 +1664,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=46
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=48
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

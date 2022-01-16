@@ -56,6 +56,50 @@ CMAKE_BINARY_DIR = /home/bot/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -80,39 +124,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -123,17 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,319 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule
+strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule
 
 # Convenience name for target.
-gazebo_ros_gencfg: strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule
+task_1_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule
 
-.PHONY : gazebo_ros_gencfg
+.PHONY : task_1_generate_messages_py
 
 # fast build rule for target.
-gazebo_ros_gencfg/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_eus
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_eus/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
-.PHONY : trajectory_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_cpp
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_cpp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
-.PHONY : gazebo_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule
-
-# Convenience name for target.
-task_1_generate_messages: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule
-
-.PHONY : task_1_generate_messages
-
-# fast build rule for target.
-task_1_generate_messages/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/build
-.PHONY : task_1_generate_messages/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule
-
-# Convenience name for target.
-task_1_genlisp: strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule
-
-.PHONY : task_1_genlisp
-
-# fast build rule for target.
-task_1_genlisp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/build
-.PHONY : task_1_genlisp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_nodejs/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
-.PHONY : trajectory_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-task_1_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule
-
-.PHONY : task_1_generate_messages_eus
-
-# fast build rule for target.
-task_1_generate_messages_eus/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/build
-.PHONY : task_1_generate_messages_eus/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_eus
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_eus/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
-.PHONY : gazebo_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_lisp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_lisp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
-.PHONY : trajectory_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_nodejs/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
-.PHONY : gazebo_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_lisp
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_lisp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
-.PHONY : gazebo_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_py
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_py/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
-.PHONY : trajectory_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_py
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_py/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
-.PHONY : gazebo_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule
-
-# Convenience name for target.
-task_1_genpy: strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule
-
-.PHONY : task_1_genpy
-
-# fast build rule for target.
-task_1_genpy/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/build
-.PHONY : task_1_genpy/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+task_1_generate_messages_py/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/build
+.PHONY : task_1_generate_messages_py/fast
 
 # Convenience name for target.
 strawberry_stacker/task_1/CMakeFiles/task_1_gennodejs.dir/rule:
@@ -498,109 +198,19 @@ task_1_gennodejs/fast:
 .PHONY : task_1_gennodejs/fast
 
 # Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+task_1_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_eus
+.PHONY : task_1_generate_messages_nodejs
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule
-
-# Convenience name for target.
-_task_1_generate_messages_check_deps_Marker: strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule
-
-.PHONY : _task_1_generate_messages_check_deps_Marker
-
-# fast build rule for target.
-_task_1_generate_messages_check_deps_Marker/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/build.make strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/build
-.PHONY : _task_1_generate_messages_check_deps_Marker/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make strawberry_stacker/task_1/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-task_1_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule
-
-.PHONY : task_1_generate_messages_cpp
-
-# fast build rule for target.
-task_1_generate_messages_cpp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/build
-.PHONY : task_1_generate_messages_cpp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule
-
-# Convenience name for target.
-task_1_geneus: strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule
-
-.PHONY : task_1_geneus
-
-# fast build rule for target.
-task_1_geneus/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/build
-.PHONY : task_1_geneus/fast
+task_1_generate_messages_nodejs/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/build
+.PHONY : task_1_generate_messages_nodejs/fast
 
 # Convenience name for target.
 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_lisp.dir/rule:
@@ -618,34 +228,19 @@ task_1_generate_messages_lisp/fast:
 .PHONY : task_1_generate_messages_lisp/fast
 
 # Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule
 
 # Convenience name for target.
-trajectory_msgs_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+task_1_geneus: strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/rule
 
-.PHONY : trajectory_msgs_generate_messages_cpp
+.PHONY : task_1_geneus
 
 # fast build rule for target.
-trajectory_msgs_generate_messages_cpp/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
-.PHONY : trajectory_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-task_1_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/rule
-
-.PHONY : task_1_generate_messages_nodejs
-
-# fast build rule for target.
-task_1_generate_messages_nodejs/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_nodejs.dir/build
-.PHONY : task_1_generate_messages_nodejs/fast
+task_1_geneus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_geneus.dir/build
+.PHONY : task_1_geneus/fast
 
 # Convenience name for target.
 strawberry_stacker/task_1/CMakeFiles/task_1_gencpp.dir/rule:
@@ -663,19 +258,334 @@ task_1_gencpp/fast:
 .PHONY : task_1_gencpp/fast
 
 # Convenience name for target.
-strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule
-.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule
+strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-task_1_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/rule
+task_1_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/rule
 
-.PHONY : task_1_generate_messages_py
+.PHONY : task_1_generate_messages_cpp
 
 # fast build rule for target.
-task_1_generate_messages_py/fast:
-	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_py.dir/build
-.PHONY : task_1_generate_messages_py/fast
+task_1_generate_messages_cpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_cpp.dir/build
+.PHONY : task_1_generate_messages_cpp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule
+
+# Convenience name for target.
+_task_1_generate_messages_check_deps_Marker: strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/rule
+
+.PHONY : _task_1_generate_messages_check_deps_Marker
+
+# fast build rule for target.
+_task_1_generate_messages_check_deps_Marker/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/build.make strawberry_stacker/task_1/CMakeFiles/_task_1_generate_messages_check_deps_Marker.dir/build
+.PHONY : _task_1_generate_messages_check_deps_Marker/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_py
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_py/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+.PHONY : gazebo_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_lisp
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_lisp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+.PHONY : gazebo_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_nodejs/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
+.PHONY : gazebo_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_eus
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_eus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+.PHONY : gazebo_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+task_1_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/rule
+
+.PHONY : task_1_generate_messages_eus
+
+# fast build rule for target.
+task_1_generate_messages_eus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages_eus.dir/build
+.PHONY : task_1_generate_messages_eus/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_nodejs/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule
+
+# Convenience name for target.
+task_1_genpy: strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/rule
+
+.PHONY : task_1_genpy
+
+# fast build rule for target.
+task_1_genpy/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_genpy.dir/build
+.PHONY : task_1_genpy/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule
+
+# Convenience name for target.
+task_1_genlisp: strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/rule
+
+.PHONY : task_1_genlisp
+
+# fast build rule for target.
+task_1_genlisp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_genlisp.dir/build
+.PHONY : task_1_genlisp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule
+
+# Convenience name for target.
+task_1_generate_messages: strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/rule
+
+.PHONY : task_1_generate_messages
+
+# fast build rule for target.
+task_1_generate_messages/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/build.make strawberry_stacker/task_1/CMakeFiles/task_1_generate_messages.dir/build
+.PHONY : task_1_generate_messages/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_cpp: strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_cpp
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_cpp/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
+.PHONY : gazebo_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make strawberry_stacker/task_1/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_eus: strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_eus/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make strawberry_stacker/task_1/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+.PHONY : trajectory_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule
+.PHONY : strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule
+
+# Convenience name for target.
+gazebo_ros_gencfg: strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/rule
+
+.PHONY : gazebo_ros_gencfg
+
+# fast build rule for target.
+gazebo_ros_gencfg/fast:
+	cd /home/bot/catkin_ws/build && $(MAKE) -f strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/build.make strawberry_stacker/task_1/CMakeFiles/gazebo_ros_gencfg.dir/build
+.PHONY : gazebo_ros_gencfg/fast
 
 # Help Target
 help:
@@ -683,47 +593,41 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install"
+	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... gazebo_ros_gencfg"
-	@echo "... trajectory_msgs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... task_1_generate_messages"
-	@echo "... task_1_genlisp"
-	@echo "... install/local"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... test"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... trajectory_msgs_generate_messages_nodejs"
-	@echo "... task_1_generate_messages_eus"
-	@echo "... gazebo_msgs_generate_messages_eus"
-	@echo "... trajectory_msgs_generate_messages_lisp"
-	@echo "... gazebo_msgs_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_lisp"
-	@echo "... trajectory_msgs_generate_messages_py"
-	@echo "... gazebo_msgs_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... task_1_genpy"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... task_1_gennodejs"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... _task_1_generate_messages_check_deps_Marker"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... task_1_generate_messages_cpp"
-	@echo "... task_1_geneus"
-	@echo "... task_1_generate_messages_lisp"
-	@echo "... trajectory_msgs_generate_messages_cpp"
-	@echo "... task_1_generate_messages_nodejs"
-	@echo "... task_1_gencpp"
-	@echo "... task_1_generate_messages_py"
 	@echo "... edit_cache"
+	@echo "... task_1_generate_messages_py"
+	@echo "... task_1_gennodejs"
+	@echo "... task_1_generate_messages_nodejs"
+	@echo "... task_1_generate_messages_lisp"
+	@echo "... task_1_geneus"
+	@echo "... task_1_gencpp"
+	@echo "... install/strip"
+	@echo "... task_1_generate_messages_cpp"
+	@echo "... _task_1_generate_messages_check_deps_Marker"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... gazebo_msgs_generate_messages_py"
+	@echo "... gazebo_msgs_generate_messages_lisp"
+	@echo "... gazebo_msgs_generate_messages_nodejs"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... gazebo_msgs_generate_messages_eus"
+	@echo "... task_1_generate_messages_eus"
+	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... install"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... test"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... task_1_genpy"
+	@echo "... task_1_genlisp"
+	@echo "... task_1_generate_messages"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... gazebo_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... trajectory_msgs_generate_messages_eus"
+	@echo "... gazebo_ros_gencfg"
 .PHONY : help
 
 
